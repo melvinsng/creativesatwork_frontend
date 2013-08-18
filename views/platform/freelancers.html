@@ -1,0 +1,60 @@
+<div class="body_container">
+  <div class="container">
+    <div class="row">
+      <div class="span3">
+        <div class="con_box listing-sidebar sidebar-search">
+          <h6 class="title-sidebar-1">Find a freelancer</h6>
+          <form class="form-search">
+            <div class="input-append">
+              <input search-input type="text" class="search-query span2" placeholder="Search">
+              <button search-button type="submit" class="btn btn-large"> <i class="fui-search"></i> </button>
+            </div>
+          </form>
+        </div>
+        <div class="con_box listing-sidebar sidebar-categories">
+          <div class="">
+            <h6 class="title-sidebar-1">Categories</h6>
+            <ul class="side_second_menu filterlinks pricefilters">
+              <search-menu name="job_categories" options="item as item.name for item in job_categories"></search-menu>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end of span3 -->
+
+      <div class="span9">
+        <h4 ng-show="current_job_category != 'All'" class="title-listing-1">Freelancers specialized in <span class="title-listing-1-skill">{{current_job_category}}</span></h4>
+
+        <div ng-repeat="freelancer in freelancers">
+          <div class="slider_div con_box">
+            <div class="slider_img_con"><a ng-href="#/freelancers.show/{{ freelancer.id }}">
+              <img class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" ng-src="{{freelancer.photo_url}}"></a>
+              <div class="clearfix"></div>
+            </div>
+            <div class="slider_details_con">
+              <a ng-href="#/freelancers.show/{{ freelancer.id }}">
+                <h3>{{freelancer.first_name}} {{freelancer.last_name}}</h3>
+              </a>
+              <div class="slider_skills">
+                  <span class="demo-inline">
+                      <span class="label" ng-repeat="skill in freelancer.skills">{{skill}}</span>
+                  </span>
+              </div>
+              <p>{{freelancer.professional_history}}</p>
+              <div class="slider_details_1">
+                <div class="slider_price"><span>Day Rate:</span> {{freelancer.day_rate}}</div>
+                <div class="slider_place"><i class="fui-location"></i> {{freelancer.location}}</div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+
+        <div class="pull-right" pagination num-pages="total_pages" current-page="query.page" max-size="9"></div>
+
+      </div>
+      <!-- end of span9 -->
+    </div>
+  </div>
+</div>

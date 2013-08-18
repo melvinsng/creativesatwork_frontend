@@ -1,0 +1,121 @@
+<div class="body_container">
+  <div class="container">
+    <div class="row">
+      <div class="span3">
+        <div class="con_box uncon_box">
+          <a class="btn btn-block btn-primary" href="#/projects">Browse All Projects</a>
+          <a class="btn btn-block btn-danger" ng-show="project.employer.id == current_user.id" href ng-click="deleteProject()">Delete This Projects</a>
+          <a class="btn btn-block btn-info" ng-show="project.employer.id == current_user.id" href="#/dashboard.edit_project/{{ project.id }}">Edit This Projects</a>
+        </div>
+      </div>
+      <!-- end of span3 -->
+
+      <div class="span9">
+        <h4 class="title-listing-1">Project in <span class="title-listing-1-skill">{{project.job_category.name}}</span></h4>
+        <div class="slider_div projects_listing_div con_box">
+          <div class="slider_details_con">
+            <h3>{{ project.title }}</h3>
+            <div class="slider_skills">
+              <span class="demo-inline">
+                <span class="label" ng-repeat="tag in project.tags">{{tag}}</span>
+              </span>
+            </div>
+            <!-- /row -->
+
+            <div class="slider_details_1">
+              <div class="slider_price"><span>Budget:</span> {{ project.budget_range }}</div>
+              <div class="slider_place"><i class="fui-location"></i> {{ project.company_location }}</div>
+              <div class="clearfix"></div>
+            </div>
+
+            <div ng-switch on="user_type" class="slider_bid">
+              <div ng-switch-when="freelancer">
+                <div ng-switch on="project.project_status">
+                  <div ng-switch-when="project_pending">
+                    <div ng-show="userCanBid">
+                      <p>If you are interested to work on this project, please bid for it.</p>
+                      <a ng-click="bidProject()" class="btn btn-header-nav btn-success" href>Bid for this project</a><div class="clearfix"></div>
+                    </div>
+                    <div ng-show="userOffered">
+                      <p>If you are interested to work on this project, please accept this offer.</p>
+                      <a ng-click="acceptOffer()" class="btn btn-header-nav btn-success" href>Accept Offer</a>
+                    </div>
+                    <div ng-show="userBidded">
+                      <p>You have placed your bid for this project</p>
+                    </div>
+                  </div>
+                  <div ng-switch-when="project_active">
+                    <div ng-show="userEmployed">
+                      <p>You are working on this project with {{ project.employer.first_name }} {{ project.employer.last_name }}</p>
+                    </div>
+                    <div ng-hide="userEmployed">
+                      <p>This project is taken by other freelancer</p>
+                    </div>
+                  </div>
+                  <div ng-switch-when="project_completed">
+                    <div ng-show="userEmployed">
+                      <p> This project is completed. Great Job!</p>
+                    </div>
+                    <div ng-hide="userEmployed">
+                      <p>Project is completed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-switch-when="employer">
+                <div ng-switch on="project.project_status">
+                  <div ng-switch-when="project_pending">
+                    <div ng-show="userIsEmployer">
+                      <div>
+                        <p>You can accept one of the freelancers' bid from the list below</p>
+                        <div class="clearfix"></div>
+                        <div class="span7">
+                          <select ng-model="selected_bidder_id" ng-options="bidder.id as bidder.first_name+' '+bidder.last_name for bidder in project.bidders"></select>
+                        </div>
+                        <div class="pull-right">
+                          <a ng-click="acceptBid(selected_bidder_id)" class="btn btn-header-nav btn-success" href>Accept Bid</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div ng-switch-when="project_active">
+                    <div ng-show="userIsEmployer">
+                      <p>You are working on this project with {{ project.freelancer.first_name }} {{ project.freelancer.last_name }}</p>
+                    </div>
+                  </div>
+                  <div ng-switch-when="project_completed">
+                    Project is completed.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <!-- end of slider_div -->
+
+        <div class="slider_div projects_listing_div con_box" ng-show="project.project_status == 'project_pending'">
+          This project has {{ project.bidders.length }} bids
+          <div class="clearfix"></div>
+        </div>
+        <!-- end of slider_div -->
+
+        <div class="slider_div con_box">
+          <h6 class="con-box-title-1"><i class="icon-file-text-alt"></i> Project Description</h6>
+          <p ng-bind-template="{{ project.project_description }}"></p>
+          <div class="hr1"></div>
+          <h6 ng-show="project.project_timeline" class="con-box-title-1"><i class="icon-calendar"></i> Project Timeline</h6>
+          <p ng-show="project.project_timeline" ng-bind="project.project_timeline"></p>
+          <div class="hr1"></div>
+          <h6 ng-show="project.additional_info" class="con-box-title-1"><i class="icon-file-text"></i> More info</h6>
+          <p ng-show="project.additional_info" ng-bind-template="{{ project.additional_info }}"></p>
+
+
+        </div>
+        <!-- end of con_box -->
+
+      </div>
+      <!-- end of span9 -->
+    </div>
+  </div>
+</div>

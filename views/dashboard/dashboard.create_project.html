@@ -1,0 +1,31 @@
+<div class="body_container">
+  <div class="container">
+    <div class="row">
+      <div class="span3">
+        <div class="box_main sidenav" ng-hide="project.profile_incomplete">
+          <div ng-include src="'partials/dashboard/employer.side_menu.html'">
+          </div>
+        </div>
+      </div>
+      <!-- end of span3 -->
+
+      <div class="span9">
+        <h3 class="title-listing-1 margin-bottom-10">
+          Start a project
+        </h3>
+
+
+        <div class="featured_box box_main" id="settings_con">
+          <div class="box_main_title">
+            Please provide your project information below
+          </div>
+
+          <form project-form user="current_user" type="new"></form>
+        </div>
+
+      </div>
+      <!-- end of span9 -->
+    </div>
+  </div>
+
+</div>

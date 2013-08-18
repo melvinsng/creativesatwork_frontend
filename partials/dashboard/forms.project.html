@@ -1,0 +1,65 @@
+<form novalidate ng-submit="submitForm()" name="form">
+
+  <div class="settings_divider">
+  </div>
+  <div class="control-group" ng-class="{error: hasError(form.title)}">
+    <label class="control-label">Title</label>
+    <input type="text" ng-model="project.title" name="title" class="input-xlarge focused" required>
+  </div>
+  <div class="control-group" ng-class="{error: hasError(form.project_description)}">
+    <label class="control-label">Project Description</label>
+    <textarea ng-model="project.project_description" name="project_description" class="input-xlarge focused" required></textarea>
+  </div>
+  <div class="control-group" ng-class="{error: hasError(form.job_category_id)}">
+    <label class="control-label">Job Category</label>
+    <select ng-model="project.job_category_id" name="job_category_id" ng-options="cat.id as cat.name for cat in job_categories" required></select>
+  </div>
+
+  <div class="settings_divider"></div>
+
+  <div class="box_main_title">
+    What is your budget?
+  </div>
+
+  <div class="settings_divider"></div>
+
+  <div class="control-group" ng-class="{error: hasError(form.budget_range)}">
+    <label class="control-label">Range</label>
+    <select ng-model="project.budget_range" name="budget_range" ng-options="budget_range for budget_range in budget_ranges" required></select>
+  </div>
+
+  <div class="settings_divider"></div>
+
+  <div class="box_main_title">
+    Additional information about your project
+  </div>
+
+  <div class="settings_divider"></div>
+
+  <div class="control-group" ng-class="{error: hasError(form.project_timeline)}">
+    <label class="control-label">Project Timeline</label>
+    <input type="text" ng-model="project.project_timeline" name="project_timeline" class="input-xlarge focused">
+  </div>
+  <div class="control-group" ng-class="{error: hasError(form.additional_info)}">
+    <label class="control-label">Additional Info</label>
+    <textarea ng-model="project.additional_info" name="additional_info" class="input-xlarge focused"></textarea>
+  </div>
+  <div class="control-group" ng-class="{error: hasError(form.tags)}">
+    <label class="control-label">Tags</label>
+    <input tagsinput ng-list ng-model="project.tags" name="tags" class="input-xlarge focused">
+  </div>
+
+
+  <div class="settings_divider"></div>
+
+  <div class="control-group">
+    <label class="control-label" for="settings_save"></label>
+    <div class="controls">
+      <button class="btn btn-primary" id="settings_save" name="submit" type="submit">
+        Save
+        changes
+      </button>
+    </div>
+  </div>
+
+</form>
