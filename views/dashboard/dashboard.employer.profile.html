@@ -35,7 +35,10 @@
               <label class="control-label">Last Name</label>
               <input type="text" ng-model="current_user.last_name" name="last_name" class="input-xlarge focused" required>
             </div>
-
+            <div class="control-group" ng-class="{error: hasError(form.email)}">
+              <label class="control-label">Email</label>
+              <input type="email" ng-model="current_user.email" name="email" class="input-xlarge focused" required>
+            </div>
             <div class="settings_divider"></div>
 
             <div class="control-group">
@@ -47,6 +50,10 @@
               <div class="control-group">
                 <label class="control-label">Company URL</label>
                 <input type="text" ng-model="current_user.company_url" class="input-xlarge focused">
+              </div>
+              <div class="control-group">
+                <label class="control-label">Telephone</label>
+                <input type="text" ng-model="current_user.phone" class="input-xlarge focused">
               </div>
               <div class="control-group" ng-class="{error: hasError(form.company_description)}">
                 <label class="control-label">Company Description</label>

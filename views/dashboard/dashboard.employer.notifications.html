@@ -5,32 +5,25 @@
         <div class="box_main sidenav">
           <div ng-include src="'partials/dashboard/employer.side_menu.html'"></div>
         </div>
-      </div><!-- end of span3 -->
+      </div>
 
       <div class="span9">
         <h3 class="title-listing-1 margin-bottom-10">Notifications
-          <span>(3)</span></h3>
+          <span>({{ current_user.unread_notifications.length }})</span></h3>
 
-        <div ng-repeat="notification in [1,2,3,4,5]" class="slider_div projects_listing_div con_box">
+        <div ng-repeat="notification in current_user.unread_notifications" class="slider_div projects_listing_div con_box">
           <div class="slider_details_notification">
 
-            <b><a href="">The-designer-name-1</a></b> placed a bid on your project:
-            Semi Pro/Casual Photographer needed for Commencement
-
+            <div ng-bind-html-unsafe="notification.message"></div>
             <div class="slider_details_notification_time">
-              14:35, 22th of July
+              {{ notification.created_at | date:'medium' }}
             </div>
 
           </div>
           <div class="clearfix"></div>
         </div>
 
-        <div ng-init="currentPage = 1"></div>
-
-        <div class="pull-right" pagination num-pages="15" current-page="currentPage" max-size="9"></div>
-
-
-      </div><!-- end of span9 -->
+      </div>
     </div>
   </div>
 </div>
