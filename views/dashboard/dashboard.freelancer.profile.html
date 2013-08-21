@@ -71,13 +71,12 @@
 
             <div class="settings_divider"></div>
 
-            <div class="control-group" ng-class="{error: hasError(form.job_category_id)}">
+            <div class="control-group" ng-class="{error: current_user.job_category_id == null && submitted }">
               <label class="control-label">Your Talent</label>
               <select ui-select2="select2Options" ng-model="current_user.job_title" name="job_category_id" data-placeholder="What is your job title?" required>
                   <optgroup label="{{ cat.name }}" ng-repeat="cat in job_categories">
                       <option value="{{ title }}" ng-repeat="title in jobTitles[cat.name]">{{ title }}</option>
                   </optgroup>
-                  <option ng-repeat="cat in job_categories" value="{{ cat.id }}">{{ cat.name }}</option>
               </select>
             </div>
             <div class="control-group" ng-class="{error: hasError(form.years_of_experience)}">
