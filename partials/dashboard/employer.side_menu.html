@@ -6,8 +6,8 @@
   </li>
   <li ui-route="#/dashboard.employer.notifications" ng-class="{active: $uiRoute}">
     <a href="#/dashboard.employer.notifications">
-      Notification
-      <div class="noti-circle">
+      Notifications
+      <div class="noti-circle" ng-show="current_user.unread_notifications.length > 0">
         {{ current_user.unread_notifications.length }}
       </div>
     </a>
