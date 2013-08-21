@@ -1,0 +1,73 @@
+<div class="body_container">
+  <div class="container">
+    <div class="row">
+      <div class="span10 offset1">
+        <div class="featured_box con_box" id="settings_con">
+          <div class="box_main_title">
+            <h4 class="page_title_1">Freelancer Registration</h4>
+          </div>
+          <div class="row">
+
+            <div class="span5 border-right-dotted">
+              <form novalidate ng-submit="submitForm()" name="userRegForm" >
+                <div class="control-group">
+                  <label class="control-label">Email</label>
+                  <div class="controls">
+                    <input class="span3" type="email" ng-model="user.email" name="email" required>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">First Name</label>
+                  <div class="controls">
+                    <input class="span3" type="text" ng-model="user.first_name" name="first_name" required>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">Last Name</label>
+                  <div class="controls">
+                    <input class="span3" type="text" ng-model="user.last_name" name="last_name" required>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">Password</label>
+                  <div class="controls">
+                    <input class="span3" type="password"
+                           ng-model="user.password" name="password" required ng-minlength="8"
+                           tooltip="Password is 8 letters long" tooltip-trigger="focus" tooltip-placement="right">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">Confirm Password</label>
+                  <div class="controls">
+                    <input class="span3" type="password" name="confirm_password"
+                           ng-model="password_verify" password-verify="user.password" required>
+                  </div>
+                </div>
+
+                <div ng-show="userRegForm.confirm_password.$error.passwordVerify">
+                  Passwords do not match</div>
+
+                <div class="control-group">
+                  <label class="control-label" for="settings_save"></label>
+                  <div class="controls">
+                    <button ng-disabled="!userRegForm.$valid" id="settings_save" class="btn btn-small btn-primary" type="submit">Register</button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+            <div class="span4">
+              <br>
+              <a href ng-click="linkedinConnect()" class="btn btn-small btn-social-linkedin"> <i class="fui-linkedin"></i> Connect with Linkedin </a>
+              <br>
+              <br>
+              <p>Register with LinkedIn. We'll walk you through connecting it if it isn't. </p>
+            </div>
+          </div>
+          <!-- end of box_main -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

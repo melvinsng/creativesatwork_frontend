@@ -1,0 +1,159 @@
+.cupid-pink {
+	background-color: #E60088;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #E60088), color-stop(100%, #E60088));
+	background-image: -webkit-linear-gradient(top, #E60088, #E60088);
+	background-image: -moz-linear-gradient(top, #E60088, #E60088);
+	background-image: -ms-linear-gradient(top, #E60088, #E60088);
+	background-image: -o-linear-gradient(top, #E60088, #E60088);
+	background-image: linear-gradient(top, #E60088, #E60088);
+    border-color: #E60088 #E60088 #E60088;
+    border-image: none;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #E60088 inset;
+    color: #FFFFFF;
+    font:  12px "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	padding:1px 3px;
+    text-align: center;
+}
+.cupid-pink:hover {
+ 	background-color: #E60088;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #E60088), color-stop(100%, #E60088));
+	background-image: -webkit-linear-gradient(top, #E60088, #E60088);
+	background-image: -moz-linear-gradient(top, #E60088, #E60088);
+	background-image: -ms-linear-gradient(top, #E60088, #E60088);
+	background-image: -o-linear-gradient(top, #E60088, #E60088);
+	background-image: linear-gradient(top, #E60088, #E60088);
+    box-shadow: 0 1px 0 0 #E60088 inset;
+    cursor: pointer;
+}
+.cupid-pink:active {
+    border-color: #E60088 #E60088 #E60088;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 8px 4px #E60088 inset, 0 1px 0 0 #E60088;
+}
+
+.big-pink {
+	background-color: #EB34A0;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EB34A0), color-stop(100%, #EB34A0));
+	background-image: -webkit-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -moz-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -ms-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -o-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: linear-gradient(top, #EB34A0, #EB34A0);
+    border-color: #888888;
+    border-image: none;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #FFA0E7 inset;
+    color: #FFFFFF;
+    font: bold 30px/1 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+
+.big-pink:hover {
+    background-color: #EB34A0;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EB34A0), color-stop(100%, #EB34A0));
+	background-image: -webkit-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -moz-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -ms-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -o-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: linear-gradient(top, #EB34A0, #EB34A0);
+    box-shadow: 0 1px 0 0 #EB34A0 inset;
+    cursor: pointer;
+}
+.big-pink:active {
+    border-color: #EB34A0 #EB34A0 #EB34A0;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 8px 4px #EB34A0 inset, 0 1px 0 0 #EB34A0;
+}
+
+.soc-pink {
+    background-color: #FFFFFF;
+    background-image: -moz-linear-gradient(center top , #EB34A0, #EB34A0);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EB34A0), color-stop(100%, #EB34A0));
+	background-image: -webkit-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -moz-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -ms-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -o-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: linear-gradient(top, #EB34A0, #EB34A0);
+	
+    border-color: #888888;
+    border-image: none;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #FFA0E7 inset;
+    color: #FFFFFF;
+    font: 35px "modern_pictogramsnormal","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    padding: 3px 15px;
+    text-align: center;
+}
+.soc-pink:hover {
+    background-color: #EB34A0;
+    background-image: -moz-linear-gradient(center top , #EB34A0, #EB34A0);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EB34A0), color-stop(100%, #EB34A0));
+	background-image: -webkit-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -moz-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -ms-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -o-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: linear-gradient(top, #EB34A0, #EB34A0);
+    box-shadow: 0 1px 0 0 #EB34A0 inset;
+    cursor: pointer;
+}
+.soc-pink:active {
+    border-color: #EB34A0 #EB34A0 #EB34A0;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 8px 4px #EB34A0 inset, 0 1px 0 0 #EB34A0;
+}
+
+
+.submit-pink {
+    background-color: #FFFFFF;
+    background-image: -moz-linear-gradient(center top , #EB34A0, #EB34A0);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EB34A0), color-stop(100%, #EB34A0));
+	background-image: -webkit-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -moz-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -ms-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -o-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: linear-gradient(top, #EB34A0, #EB34A0);
+    border-color: #888888;
+    border-image: none;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #FFA0E7 inset;
+    color: #FFFFFF;
+    font: 20px "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    padding: 20px 35px;
+    text-align: center;
+}
+.submit-pink:hover {
+    background-color: #EB34A0;
+    background-image: -moz-linear-gradient(center top , #EB34A0, #EB34A0);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EB34A0), color-stop(100%, #EB34A0));
+	background-image: -webkit-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -moz-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -ms-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: -o-linear-gradient(top, #EB34A0, #EB34A0);
+	background-image: linear-gradient(top, #EB34A0, #EB34A0);
+    box-shadow: 0 1px 0 0 #EB34A0 inset;
+    cursor: pointer;
+}
+.submit-pink:active {
+    border-color: #EB34A0 #EB34A0 #EB34A0;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 8px 4px #EB34A0 inset, 0 1px 0 0 #EB34A0;
+}
