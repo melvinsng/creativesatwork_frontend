@@ -1,5 +1,9 @@
 body {
+<<<<<<< HEAD
 	background-color: #111;
+=======
+	background-color: #111111;
+>>>>>>> d97f12864d89fad640d66e2261da1b679db9b14d
 }
 .body_container.unbody_container {
 	padding-top:  0px;

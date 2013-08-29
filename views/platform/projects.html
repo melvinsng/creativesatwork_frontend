@@ -1,6 +1,12 @@
 <div class="body_container">
   <div class="container">
     <div class="row">
+    
+    <div class="span12">
+        
+        <h4 ng-show="current_job_category != 'All'" class="title-listing-1">Projects related to <span class="title-listing-1-skill">{{current_job_category}}</span></h4>
+        
+        </div>
       <div class="span3">
         <div class="con_box uncon_box">
           <a class="btn btn-block btn-primary" href ng-click="clearFilters()">Clear filters</a>
@@ -35,11 +41,10 @@
       <!-- end of span3 -->
 
       <div class="span9">
-        <h4 ng-show="current_job_category != 'All'" class="title-listing-1">Projects related to <span class="title-listing-1-skill">{{current_job_category}}</span></h4>
-
+        
         <div ng-repeat="project in projects">
 
-          <div class="slider_div con_box">
+          <div class="slider_div projects_listing_div con_box">
             <div class="slider_details_con">
               <a ng-href="#/projects.show/{{ project.id }}">
                 <h3>{{project.title}} </h3>
