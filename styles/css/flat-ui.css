@@ -789,7 +789,7 @@ a.muted:hover, a.muted:focus {
 }
 .btn:hover, .btn:focus, .btn-group:focus .btn.dropdown-toggle {
 	background-color: #cacfd2;
-	color: #ffffff;
+	color: #ffffff!important;
 	outline: none;
 	-webkit-transition: 0.25s;
 	-moz-transition: 0.25s;
@@ -3074,7 +3074,7 @@ input.search-query {
 	position: relative;
 }
 .pagination ul {
-	background: #d6dbdf;
+	
 	color: #ffffff;
 	vertical-align: top;
 	-webkit-border-radius: 6px;
@@ -3097,8 +3097,9 @@ input.search-query {
 }
 .pagination ul li {
 	display: inline-block;
-	margin-right: -3px;
+	margin-right: 2px;
 	vertical-align: top;
+
 }
 .pagination ul li.active > a, .pagination ul li.active > span {
 	background-color: #ec008a;

@@ -1,6 +1,11 @@
 <div class="body_container">
   <div class="container">
     <div class="row">
+    <div class="span12">
+    
+    <h4 ng-show="current_job_category != 'All'" class="title-listing-1">Freelancers specialized in <span class="title-listing-1-skill">{{current_job_category}}</span></h4>
+    </div>
+    
       <div class="span3">
         <div class="con_box listing-sidebar sidebar-search">
           <h6 class="title-sidebar-1">Find a freelancer</h6>
@@ -23,7 +28,7 @@
       <!-- end of span3 -->
 
       <div class="span9">
-        <h4 ng-show="current_job_category != 'All'" class="title-listing-1">Freelancers specialized in <span class="title-listing-1-skill">{{current_job_category}}</span></h4>
+        
 
         <div ng-repeat="freelancer in freelancers">
           <div class="slider_div con_box">

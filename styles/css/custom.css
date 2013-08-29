@@ -1,5 +1,5 @@
 body {
-	background-color: #34495e;
+	background-color: #111111;
 }
 .body_container.unbody_container {
 	padding-top:  0px;
@@ -18,12 +18,21 @@ body {
 	clear: both;
 }
 .body_container {
-	background-color: #f6f6f6;
+	
 	padding-top: 30px;
 	padding-bottom: 30px;
+	background-color: #fff;
 	background-image: url(../img/grey-body-bg.png);
 	background-repeat: repeat;
 }
+
+.body_container_home {
+	
+	
+	background-color: #fff;
+	
+}
+
 .border-right-dotted {
 	border-right: 1px dotted #ccc;
 }
