@@ -1,5 +1,5 @@
 body {
-	background-color: #34495e;
+	background-color: #111;
 }
 .body_container.unbody_container {
 	padding-top:  0px;
@@ -14,16 +14,25 @@ body {
 }
 .hr2 {
 	margin: 30px 0px;
-	border-top: 1px dotted #ccc;
+	border-top: 1px dotted #ccc; 
 	clear: both;
 }
 .body_container {
-	background-color: #f6f6f6;
+	
 	padding-top: 30px;
 	padding-bottom: 30px;
+	background-color: #fff;
 	background-image: url(../img/grey-body-bg.png);
 	background-repeat: repeat;
 }
+
+.body_container_home {
+	
+	
+	background-color: #fff;
+	
+}
+
 .border-right-dotted {
 	border-right: 1px dotted #ccc;
 }
@@ -197,6 +206,7 @@ body {
 .form-signup-1 .nav {
 	margin: 0px;
 	padding-top: 10px;
+	background-color:  transparent;
 }
 .form-signup-1 .tooltip.left {
 	margin-left: -16px;
@@ -548,7 +558,7 @@ display: block;
 }
 .uploader-tools p {
 font-size: 12px;
-margin-top: :10px;
+margin-top: 10px;
 }
 
 /*  profile table

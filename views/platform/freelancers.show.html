@@ -56,7 +56,7 @@
           <p ng-bind="freelancer.professional_history"></p>
           <h5 ng-show="freelancer.portfolios.length != 0">Portfolios</h5>
           <p  ng-repeat="portfolio in freelancer.portfolios">
-            <a ng-href="{{ portfolio.url }}">{{ portfolio.url }}</a>
+            <a target="_blank" ng-href="{{ portfolio.url }}">{{ portfolio.url }}</a>
           </p>
           <div class="hr1"></div>
 

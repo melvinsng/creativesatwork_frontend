@@ -2,6 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="span3">
+        <div class="con_box uncon_box">
+          <a class="btn btn-block btn-primary" href ng-click="clearFilters()">Clear filters</a>
+        </div>
         <div class="con_box listing-sidebar sidebar-search">
           <h6 class="title-sidebar-1">Find a freelancer</h6>
           <form class="form-search">
@@ -11,14 +14,7 @@
             </div>
           </form>
         </div>
-        <div class="con_box listing-sidebar sidebar-categories">
-          <div class="">
-            <h6 class="title-sidebar-1">Categories</h6>
-            <ul class="side_second_menu filterlinks pricefilters">
-              <search-menu name="job_categories" options="item as item.name for item in job_categories"></search-menu>
-            </ul>
-          </div>
-        </div>
+        <job-categories-filter></job-categories-filter>
       </div>
       <!-- end of span3 -->
 
@@ -33,7 +29,7 @@
             </div>
             <div class="slider_details_con">
               <a ng-href="#/freelancers.show/{{ freelancer.id }}">
-                <h3>{{freelancer.first_name}} {{freelancer.last_name}}</h3>
+                <h3>{{freelancer.first_name}} {{freelancer.last_name}}  <small>{{ freelancer.job_title }}</small></h3>
               </a>
               <div class="slider_skills">
                   <span class="demo-inline">

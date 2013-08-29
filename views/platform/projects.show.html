@@ -4,8 +4,11 @@
       <div class="span3">
         <div class="con_box uncon_box">
           <a class="btn btn-block btn-primary" href="#/projects">Browse All Projects</a>
-          <a class="btn btn-block btn-danger" ng-show="project.employer.id == current_user.id" href ng-click="deleteProject()">Delete This Projects</a>
-          <a class="btn btn-block btn-info" ng-show="project.employer.id == current_user.id" href="#/dashboard.edit_project/{{ project.id }}">Edit This Projects</a>
+        </div>
+        <div class="con_box uncon_box" ng-show="project.employer.id == current_user.id">
+          <a class="btn btn-block btn-danger" href ng-click="deleteProject()">Delete This Projects</a>
+          <a class="btn btn-block btn-info" href="#/dashboard.edit_project/{{ project.id }}">Edit This Projects</a>
+          <a class="btn btn-block btn-inverse" href ng-click="completeProject()">Mark as Complete</a>
         </div>
       </div>
       <!-- end of span3 -->

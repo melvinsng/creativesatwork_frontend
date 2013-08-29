@@ -1,4 +1,4 @@
-<div class="body_container unbody_container">
+<div class="body_container_home unbody_container">
   <div class="banner-home">
     <div class="container">
       <div class="row">
@@ -12,13 +12,13 @@
           </div>
           <div class="row-fluid choice-box">
             <div class="span6 center separate">
-              <p class="center banner-font2">I have a project</p>
+              <p class="align-right banner-font2 ">I have a project</p>
               <p class="p-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ante est. Ut eget risus tortor. Donec laoreet accumsan erat eget ullamcorper.</p>
               <p class="p-right">faucibus id consequat vel</p>
               <p class="p-right"><a class="p-right" href="#/employer.register"><img src="styles/img/submitproject.png"></a></p>
             </div>
             <div class="span6 center separate2">
-              <p class="center banner-font2">I have skills to offer</p><p>
+              <p class="align-left banner-font2 ">I have skills to offer</p><p>
             </p><p class="p-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ante est. Ut eget risus tortor. Donec laoreet accumsan erat eget ullamcorper.</p>
               <p class="p-left">faucibus id consequat vel</p>
               <p class="p-left"><a  href="#/freelancer.register"><img src="styles/img/jointhecomm.png"></a></p>
@@ -28,5 +28,133 @@
       </div>
     </div>
   </div> <!-- end of banner-home -->
+
+
+  <div class="home-section-div about_us_area">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="title-1">More about us</div>
+        </div>
+      </div>
+      <div class="row-fluid au_content">
+        <div class="span4">
+          <img class="center" src="styles/img/icon-projects.png">
+          <h3 class="center">Projects</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ante est. Ut eget risus tortor. Donec laoreet accumsan erat eget ullamcorper. Nulla ligula turpis, faucibus id consequat vel.</p>
+        </div>
+        <div class="span4 center-box">
+          <img class="center" src="styles/img/icon-community.png">
+          <h3 class="center">Community</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ante est. Ut eget risus tortor. Donec laoreet accumsan erat eget ullamcorper. Nulla ligula turpis, faucibus id consequat vel.</p>
+        </div>
+        <div class="span4">
+          <img class="center" src="styles/img/icon-convenience.png">
+          <h3 class="center">Convenience</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ante est. Ut eget risus tortor. Donec laoreet accumsan erat eget ullamcorper. Nulla ligula turpis, faucibus id consequat vel.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="portfolio_area home-section-div">
+    <div class="container">
+      <div class="row">
+        <div class="span12 ">
+          <div class="title-1">Recent Joined Freelancers</div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="portfolio ">
+
+          <div class="row-fluid">
+            <div class="span3 work-box" ng-repeat="freelancer in freelancers_start">
+              <div>
+                <a ng-href="#/freelancers.show/{{ freelancer.id }}">
+                  <img class="center" ng-src="{{ freelancer.photo_url }}">
+                </a>
+              </div>
+              <div class="work-description">
+                <h4>{{ freelancer.first_name }}</h4>
+                <p>{{ freelancer.job_title }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row-fluid">
+            <div class="span3 work-box" ng-repeat="freelancer in freelancers_end">
+              <div>
+                <a ng-href="#/freelancers.show/{{ freelancer.id }}">
+                  <img class="center" ng-src="{{ freelancer.photo_url }}">
+                </a>
+              </div>
+              <div class="work-description">
+                <h4>{{ freelancer.first_name }} {{ freelancer.last_name }}</h4>
+                <p>{{ freelancer.job_title }}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12 center">
+          <a href="/#/employer.register" class="btn btn-primary btn-large" title="view more">Become a project owner to view more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="quote_area home-section-div white-bg">
+    <div class="container">
+      <div class="row-fluid quote-inner">
+        <div class="span6 quote-logo">
+          <img src="styles/img/quotelogo.png">
+        </div>
+        <div class="span6">
+          <!--<div class="row quote-box">
+            <div class="quote-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ante est. Ut eget risus tortor. Donec laoreet accumsan erat eget ullamcorper. Nulla ligula turpis, faucibus id consequat vel.</p>
+              <div class="quote-content-person">Someone, company</div>
+            </div>
+          </div>-->
+
+
+
+          <span class="text">Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget.<em class="arw"></em><em class="arwb"></em><span class="handle">Somone</span></span>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="contact_area home-section-div">
+    <div class="container">
+      <div class="row-fluid contact-inner">
+        <div class="span12">
+          <div class="home-question">
+
+            <div class="desc">Any Questions?</div> <a href="/#/contact"><button class="btn btn-primary btn large" title="contact us">Contact Us</button></a>
+
+            <button class="btn btn-primary btn-small" title="facebook"><i class="icon-facebook"></i></button>
+            <button class="btn btn-primary btn-small" title="twitter"><i class="icon-twitter"></i></button>
+
+          </div>
+
+          <div class="soc-nav">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 </div>

@@ -189,18 +189,17 @@
 }
 
 .collapse.in ul { 
-	margin-top:10px !important;
+
 }
 
 .collapse.in li a { 
-	padding:0 10px;
-	border-bottom:solid 1px #eee;
+
 	background:none;
-}
+} 
 
 .collapse.in li a:hover,
 .collapse.in li a.dropdown-toggle { 
-	border-bottom:solid 1px #E9008A !important;
+
 	background:none;
 }
 
