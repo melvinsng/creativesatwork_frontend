@@ -3610,17 +3610,10 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
     cursor: default;
 }
 .pagination ul > .disabled > span, .pagination ul > .disabled > a, .pagination ul > .disabled > a:hover, .pagination ul > .disabled > a:focus {
-<<<<<<< HEAD
     color: #999999;
     cursor: default;
     background-color: transparent;
     background-color: #ddd;
-=======
-	color: #999999;
-	cursor: default;
-	background-color: transparent;
-	background-color: #ddd;
->>>>>>> d97f12864d89fad640d66e2261da1b679db9b14d
 }
 .pagination ul > li:first-child > a, .pagination ul > li:first-child > span {
     border-left-width: 1px;
