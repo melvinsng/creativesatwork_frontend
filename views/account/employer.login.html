@@ -12,17 +12,21 @@
                 <div class="control-group">
                   <label class="control-label">Email</label>
                   <div class="controls">
-                    <input class="span3" type="email" placeholder="Email"
+                    <input class="" type="email" placeholder="Email"
                            ng-model="user.email" name="email" required>
                   </div>
                 </div>
                 <div class="control-group">
                   <label class="control-label">Password</label>
                   <div class="controls">
-                    <input class="span3" type="password" placeholder="Password"
+                    <input class="" type="password" placeholder="Password"
                            ng-model="user.password" name="password" required ng-minlength="8"
                            tooltip="Password is 8 letters long" tooltip-trigger="focus" tooltip-placement="right">
                   </div>
+                </div>
+                <div class="control-group">
+                  <label></label>
+                  <div class="controls"><a href ng-click="forgotPassword()">Forgot your password?</a></div>
                 </div>
 
                 <div class="control-group">
@@ -34,7 +38,7 @@
               </form>
             </div>
             <div class="span4">
-              <br>
+
               <a href ng-click="linkedinConnect()" class="btn btn-small btn-social-linkedin"> <i class="fui-linkedin"></i> Connect with Linkedin </a>
               <br>
               <br>

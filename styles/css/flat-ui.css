@@ -22,6 +22,14 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="fui-"] {
 */
+
+
+*{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
 .fui-triangle-up, .fui-triangle-up-small, .fui-triangle-right-large, .fui-triangle-left-large, .fui-triangle-down, .fui-info, .fui-alert, .fui-question, .fui-window, .fui-windows, .fui-arrow-right, .fui-arrow-left, .fui-loop, .fui-cmd, .fui-mic, .fui-triangle-down-small, .fui-check-inverted, .fui-heart, .fui-location, .fui-plus, .fui-check, .fui-cross, .fui-list, .fui-new, .fui-video, .fui-photo, .fui-volume, .fui-time, .fui-eye, .fui-chat, .fui-home, .fui-upload, .fui-search, .fui-user, .fui-mail, .fui-lock, .fui-power, .fui-star, .fui-calendar, .fui-gear, .fui-book, .fui-exit, .fui-trash, .fui-folder, .fui-bubble, .fui-cross-inverted, .fui-plus-inverted, .fui-export, .fui-radio-unchecked, .fui-radio-checked, .fui-checkbox-unchecked, .fui-checkbox-checked, .fui-flat, .fui-calendar-solid, .fui-star-2, .fui-credit-card, .fui-clip, .fui-link, .fui-pause, .fui-play, .fui-tag, .fui-document, .fui-image, .fui-facebook, .fui-youtube, .fui-vimeo, .fui-twitter, .fui-stumbleupon, .fui-spotify, .fui-skype, .fui-pinterest, .fui-path, .fui-myspace, .fui-linkedin, .fui-googleplus, .fui-dribbble, .fui-blogger, .fui-behance, .fui-list-thumbnailed, .fui-list-small-thumbnails, .fui-list-numbered, .fui-list-large-thumbnails, .fui-list-columned, .fui-list-bulleted {
     display: inline-block;
     font-family: 'Flat-UI-Icons';
@@ -787,6 +795,7 @@ a.muted:hover, a.muted:focus {
     border-bottom: 1px solid rgba(0,0,0,0.35);
     border-top: 1px solid transparent;
 }
+
 .btn:hover, .btn:focus, .btn-group:focus .btn.dropdown-toggle {
     background-color: #cacfd2;
     color: #ffffff!important;
@@ -1788,7 +1797,8 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     font-family: "Lato", sans-serif;
     font-size: 14px;
     padding: 5px 5px;
-    height: 21px;
+    min-height: 33px;
+
     text-indent: 6px;
     -webkit-appearance: none;
     -webkit-border-radius: 3px;
@@ -1834,7 +1844,7 @@ textarea.placeholder, input[type="text"].placeholder, input[type="password"].pla
     box-shadow: none;
 }
 .row-fluid textarea, .row-fluid input[type="text"], .row-fluid input[type="password"], .row-fluid input[type="datetime"], .row-fluid input[type="datetime-local"], .row-fluid input[type="date"], .row-fluid input[type="month"], .row-fluid input[type="time"], .row-fluid input[type="week"], .row-fluid input[type="number"], .row-fluid input[type="email"], .row-fluid input[type="url"], .row-fluid input[type="search"], .row-fluid input[type="tel"], .row-fluid input[type="color"], .row-fluid .uneditable-input {
-    height: 41px;
+    min-height: 33px;
     width: 100%;
 }
 textarea.flat, input[type="text"].flat, input[type="password"].flat, input[type="datetime"].flat, input[type="datetime-local"].flat, input[type="date"].flat, input[type="month"].flat, input[type="time"].flat, input[type="week"].flat, input[type="number"].flat, input[type="email"].flat, input[type="url"].flat, input[type="search"].flat, input[type="tel"].flat, input[type="color"].flat, .uneditable-input.flat {
@@ -1945,6 +1955,7 @@ textarea.flat:focus, input[type="text"].flat:focus, input[type="password"].flat:
 }
 .control-group textarea, .control-group input[type="text"], .control-group input[type="password"], .control-group input[type="datetime"], .control-group input[type="datetime-local"], .control-group input[type="date"], .control-group input[type="month"], .control-group input[type="time"], .control-group input[type="week"], .control-group input[type="number"], .control-group input[type="email"], .control-group input[type="url"], .control-group input[type="search"], .control-group input[type="tel"], .control-group input[type="color"], .control-group .uneditable-input {
     margin-bottom: 0;
+    max-width: 95%;
 }
 .control-group {
     position: relative;
@@ -2014,6 +2025,7 @@ textarea {
 .row-fluid textarea {
     height: auto;
     width: 100% !important;
+
 }
 textarea[class*="span"] {
     width: 100% !important;
@@ -3992,15 +4004,16 @@ input.search-query {
 }
 .alert {
     color: #34495e;
-    padding: 16px 45px 16px 30px;
+    padding: 10px;
     text-shadow: none;
     background-color: #f9f8f3;
-    border: 2px solid #ebece8;
-    font-size: 16px;
-    line-height: 1.53875em;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+    border: 1px solid #ebece8;
+    font-size: 14px;
+    line-height: 14px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 93%;
 }
 .alert a {
     color: #f1c40f;
