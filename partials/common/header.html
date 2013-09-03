@@ -12,13 +12,8 @@
               <li ng-hide="authenticated"><a href="#/freelancer.login">Freelancer login</a> </li>
               <li ng-hide="authenticated"><a href="#/employer.login">Employer login</a> </li>
               <li ng-hide="authenticated"><a href="#/freelancer.register">Sign Up as Freelancer</a> </li>
-<<<<<<< HEAD
 
 
-=======
-            
-              
->>>>>>> 1b779178af1f61afc892541755d86dd811f2bb45
               <li ng-show="authenticated && user_type == 'employer' && !current_user.profile_incomplete">
 
                 <a class="btn btn-primary btn-mini" href="#/dashboard.create_project">Post a Job</a></li>
@@ -27,19 +22,11 @@
 
               <li ng-show="authenticated && user_type == 'freelancer' ">
                 <a class="btn btn-primary btn-mini" href="#/projects">Seek a Job</a></li>
-<<<<<<< HEAD
               <li ng-show="authenticated && !current_user.profile_incomplete"><a ng-href="#/dashboard.{{ user_type }}">Dashboard <span ng-show="current_user.unread_notifications.length > 0" class="header-noti">{{ current_user.unread_notifications.length }}</span></a></li>
               <li ng-show="authenticated && current_user.profile_incomplete"><a ng-href="#/dashboard.{{ user_type }}.profile">Dashboard <span class="header-noti">2</span></a></li>
 
               <li ng-show="authenticated"><a ng-click="logout()">Logout</a></li>
 
-=======
-                <li ng-show="authenticated && !current_user.profile_incomplete"><a ng-href="#/dashboard.{{ user_type }}">Dashboard <span class="header-noti">2</span></a></li>
-              <li ng-show="authenticated && current_user.profile_incomplete"><a ng-href="#/dashboard.{{ user_type }}.profile">Dashboard <span class="header-noti">2</span></a></li>
-              
-              <li ng-show="authenticated"><a ng-click="logout()">Logout</a></li>
-                
->>>>>>> 1b779178af1f61afc892541755d86dd811f2bb45
             </ul>
           </div>
         </div>
