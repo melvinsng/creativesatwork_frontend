@@ -1,5 +1,6 @@
 body {
 	background-color: #111;
+	overflow-y: scroll;
 }
 .body_container.unbody_container {
 	padding-top:  0px;
@@ -18,7 +19,7 @@ body {
 	clear: both;
 }
 .body_container {
-	
+	min-height: 450px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	background-color: #fff;
@@ -47,7 +48,16 @@ body {
 /* header
 ---------------------------------------------------------------- */
 
-
+.header-noti{
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+	background-color: #e74c3c;
+	padding: 6px 9px;
+	color: white;
+	font-size: 11px;
+	
+}
 .header_app {
 	padding: 10px 0px;
 	background-color: #fff;/*background: #F7F5F5 url(../img/tile.gif) repeat;*/
@@ -410,7 +420,7 @@ margin: 0px;
 	height: 12px;
 }
 .sidebar-search .form-search .btn {
-	line-height: 9px;
+	line-height: 10px;
 }
 .sidebar-categories ul {
 	list-style: none;
