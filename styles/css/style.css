@@ -33,7 +33,7 @@ border-top: 0px
 	background-color: #fff;
 }
 .home-section-div.white-bg{
-background-color:  white;
+	background-color:  #eeeeee;
 }
 
 .header{
@@ -121,11 +121,13 @@ color:  #fff;
     color: #515151;
     font-size: 26px;
     line-height: 2;
+    font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 }
 .banner-font2 {
 	color: #515151;
 	font-size: 28px;
 	line-height:  36px;
+    font-family: "Conv_MuseoSans_500", Arial, sans-serif;	
 	
 }
 
@@ -197,6 +199,25 @@ color:  #999;
 	text-shadow: 1px 1px 1px #333333;
 	filter: dropshadow(color=#333333, offx=1, offy=1);
 }
+
+/* partners
+--------------------------------------------------------------------- */
+
+.partners-div{
+	border-bottom: 5px solid #ed008c;
+}
+.partners-div .partners-logos{
+	
+}
+.partners-div .partners-logos img{
+	height: 65px;
+	
+	margin:20px 0px 20px;
+}
+
+
+
+
 /* banner - contact us */
 .banner-contact {
     
@@ -222,17 +243,20 @@ color:  #999;
    font-size: 32px;
    margin-bottom: 20px;
    line-height: 32px;
+   font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 }
 .title-2{
 	text-align: center;
 	font-size: 38px;
 	margin-bottom: 20px;
 	line-height: 32px;
+	font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 }
 .title-white {
 	color: white;
 	text-shadow: 1px 1px 1px #333333;
 	filter: dropshadow(color=#333333, offx=1, offy=1);
+	font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 }
 
 .about_us_area .au_content img{
@@ -273,9 +297,11 @@ color:  #999;
 	font-weight:bold;
 	font-size:22px;
 	line-height: 28px;
+	font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 }
 .pink-font{
 	color:#ec008a;
+	font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 }
 .right-font{
 	text-align:right;
@@ -494,6 +520,7 @@ text-align:right;
 display:inline-block;
 margin-right: 20px;
 line-height:37px;
+font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 }
 
 .home-question .btn{
