@@ -5,6 +5,11 @@
       ({{ current_user.bidding_projects.length }})
     </span>
   </h3>
+
+  <div class="slider_div projects_listing_div con_box" ng-show="current_user.bidding_projects.length == 0">
+    <p>There is no projects here...</p>
+  </div>
+
   <div class="slider_div projects_listing_div con_box" ng-repeat="project in current_user.bidding_projects">
     <div class="slider_details_con">
       <a ng-href="#/projects.show/{{ project.id }}">
