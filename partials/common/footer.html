@@ -4,11 +4,12 @@
       <div class="span10">
         <ul class="bottom-links">
           <li><a href="">Home</a></li>
-          <li><a href="#/browse">Browse</a></li>
-          <li><a href="#/about">About</a></li>
-          <li><a href="#/contact">Contact</a></li>
-          <li><a href="#/terms">Terms</a></li>
-          <li><a href="#/privacy">Privacy Policy</a></li>
+          <li ng-show="user_type == 'employer'"><a href="/#/freelancers">Browse</a></li>
+          <li ng-show="user_type == 'freelancer'"><a href="/#/projects">Browse</a></li>
+          <li><a href="/#/about">About</a></li>
+          <li><a href="/#/contact">Contact</a></li>
+          <li><a href="/#/terms">Terms</a></li>
+          <li><a href="/#/privacy">Privacy Policy</a></li>
         </ul>
       </div>
       <div class="span2">

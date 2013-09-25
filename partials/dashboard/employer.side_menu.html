@@ -1,11 +1,11 @@
 <ul id="account_sidenav">
   <li ui-route="#/dashboard.employer" ng-class="{active: $uiRoute}">
-    <a href="#/dashboard.employer">
+    <a href="/#/dashboard.employer">
       Dashboard
     </a>
   </li>
   <li ui-route="#/dashboard.employer.notifications" ng-class="{active: $uiRoute}">
-    <a href="#/dashboard.employer.notifications">
+    <a href="/#/dashboard.employer.notifications">
       Notifications
       <div class="noti-circle" ng-show="current_user.unread_notifications.length > 0">
         {{ current_user.unread_notifications.length }}
@@ -13,22 +13,22 @@
     </a>
   </li>
   <li ui-route="#/dashboard.employer.pending_projects" ng-class="{active: $uiRoute}">
-    <a href="#/dashboard.employer.pending_projects">
+    <a href="/#/dashboard.employer.pending_projects">
       Pending Projects ({{ current_user.pending_projects.length }})
     </a>
   </li>
   <li ui-route="#/dashboard.employer.active_projects" ng-class="{active: $uiRoute}">
-    <a href="#/dashboard.employer.active_projects">
+    <a href="/#/dashboard.employer.active_projects">
       Active Projects ({{ current_user.active_projects.length }})
     </a>
   </li>
   <li ui-route="#/dashboard.employer.completed_projects" ng-class="{active: $uiRoute}">
-    <a href="#/dashboard.employer.completed_projects">
+    <a href="/#/dashboard.employer.completed_projects">
       Completed Projects ({{ current_user.completed_projects.length }})
     </a>
   </li>
   <li ui-route="#/dashboard.employer.profile" ng-class="{active: $uiRoute}">
-    <a href="#/dashboard.employer.profile">
+    <a href="/#/dashboard.employer.profile">
       Profile
     </a>
   </li>

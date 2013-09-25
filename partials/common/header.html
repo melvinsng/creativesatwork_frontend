@@ -2,28 +2,28 @@
   <div class="container">
     <div class="row">
       <div class="header-logo span4 ">
-        <a href="#/home"><img src="styles/img/logo-w450.png"></a>
+        <a href="/#/home"><img src="styles/img/logo-w450.png"></a>
       </div>
       <div class="header-right span7 pull-right">
         <div class="row">
           <div class="signup-area">
             <ul class="nav">
 
-              <li ng-hide="authenticated"><a href="#/freelancer.login">Freelancer login</a> </li>
-              <li ng-hide="authenticated"><a href="#/employer.login">Employer login</a> </li>
-              <li ng-hide="authenticated"><a href="#/freelancer.register">Sign Up as Freelancer</a> </li>
+              <li ng-hide="authenticated"><a href="/#/freelancer.login">Freelancer login</a> </li>
+              <li ng-hide="authenticated"><a href="/#/employer.login">Employer login</a> </li>
+              <li ng-hide="authenticated"><a href="/#/freelancer.register">Sign Up as Freelancer</a> </li>
 
 
               <li ng-show="authenticated && user_type == 'employer' && !current_user.profile_incomplete">
 
-                <a class="btn btn-primary btn-mini" href="#/dashboard.create_project">Post a Job</a></li>
+                <a class="btn btn-primary btn-mini" href="/#/dashboard.create_project">Post a Job</a></li>
 
-              <li ng-hide="authenticated"><a class="btn btn-primary btn-mini" href="#/employer.register">Post a Job</a></li>
+              <li ng-hide="authenticated"><a class="btn btn-primary btn-mini" href="/#/employer.register">Post a Job</a></li>
 
               <li ng-show="authenticated && user_type == 'freelancer' ">
-                <a class="btn btn-primary btn-mini" href="#/projects">Seek a Job</a></li>
-              <li ng-show="authenticated && !current_user.profile_incomplete"><a ng-href="#/dashboard.{{ user_type }}">Dashboard <span ng-show="current_user.unread_notifications.length > 0" class="header-noti">{{ current_user.unread_notifications.length }}</span></a></li>
-              <li ng-show="authenticated && current_user.profile_incomplete"><a ng-href="#/dashboard.{{ user_type }}.profile">Dashboard <span class="header-noti">2</span></a></li>
+                <a class="btn btn-primary btn-mini" href="/#/projects">Seek a Job</a></li>
+              <li ng-show="authenticated && !current_user.profile_incomplete"><a ng-href="/#/dashboard.{{ user_type }}">Dashboard <span ng-show="current_user.unread_notifications.length > 0" class="header-noti">{{ current_user.unread_notifications.length }}</span></a></li>
+              <li ng-show="authenticated && current_user.profile_incomplete"><a ng-href="/#/dashboard.{{ user_type }}.profile">Dashboard <span class="header-noti">2</span></a></li>
 
               <li ng-show="authenticated"><a ng-click="logout()">Logout</a></li>
 
@@ -42,11 +42,11 @@
                 </a><!-- /nav-collapse -->
                 <div class="nav-collapse collapse">
                   <ul class="nav top-2">
-                    <li id="nav-home"><a href="#/home">Home</a></li>
-                    <li id="nav-about"><a href="#/about">About Us</a></li>
-                    <li id="nav-contact"><a href="#/contact">Contact</a></li>
-                    <li ng-show="authenticated" ui-route="#/projects" ng-class="{active: $uiRoute}"><a href="#/projects">Projects</a></li>
-                    <li ng-show="authenticated" ui-route="#/freelancers" ng-class="{active: $uiRoute}"><a href="#/freelancers">Freelancers</a></li>
+                    <li id="nav-home"><a href="/#/home">Home</a></li>
+                    <li id="nav-about"><a href="/#/about">About Us</a></li>
+                    <li id="nav-contact"><a href="/#/contact">Contact</a></li>
+                    <li ng-show="authenticated" ui-route="#/projects" ng-class="{active: $uiRoute}"><a href="/#/projects">Projects</a></li>
+                    <li ng-show="authenticated" ui-route="#/freelancers" ng-class="{active: $uiRoute}"><a href="/#/freelancers">Freelancers</a></li>
                   </ul>
                   <div class="clearfix"></div>
                 </div><!-- /nav-collapse -->

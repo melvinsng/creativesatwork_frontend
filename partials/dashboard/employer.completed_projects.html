@@ -13,7 +13,7 @@
   <div class="slider_div projects_listing_div con_box" ng-repeat="project in current_user.completed_projects">
     <div class="slider_details_con">
 
-      <a ng-href="#/projects.show/{{ project.id }}">
+      <a ng-href="/#/projects.show/{{ project.id }}">
         <h3>
           {{ project.title }}
         </h3>
@@ -33,7 +33,7 @@
           <i class="icon-ok">
           </i>
           Worked with
-          <a href="#/freelancers.show/{{ project.freelancer.id }}" ng-bind="project.freelancer.first_name"></a>
+          <a href="/#/freelancers.show/{{ project.freelancer.id }}" ng-bind="project.freelancer.first_name"></a>
         </div>
       </div>
 

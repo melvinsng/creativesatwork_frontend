@@ -23,12 +23,12 @@
 
         <div ng-repeat="freelancer in freelancers">
           <div class="slider_div con_box">
-            <div class="slider_img_con"><a ng-href="#/freelancers.show/{{ freelancer.id }}">
+            <div class="slider_img_con"><a ng-href="/#/freelancers.show/{{ freelancer.id }}">
               <img class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" ng-src="{{freelancer.photo_url}}"></a>
               <div class="clearfix"></div>
             </div>
             <div class="slider_details_con">
-              <a ng-href="#/freelancers.show/{{ freelancer.id }}">
+              <a ng-href="/#/freelancers.show/{{ freelancer.id }}">
                 <h3>{{freelancer.first_name}} {{freelancer.last_name}}  <small>{{ freelancer.job_title }}</small></h3>
               </a>
               <div class="slider_skills">
