@@ -8,9 +8,10 @@
         <div class="row">
           <div class="signup-area">
             <ul class="nav">
+              <li><a class="btn" href="javascript:void(0);" onclick="javascript:introJs().start();">HELP</a></li>
 
-              <li ng-hide="authenticated"><a href="/#/freelancer.login">Freelancer login</a> </li>
-              <li ng-hide="authenticated"><a href="/#/employer.login">Employer login</a> </li>
+              <li ng-hide="authenticated"><a data-step="1" data-intro="Login as a freelancer here" href="/#/freelancer.login">Freelancer login</a> </li>
+              <li ng-hide="authenticated"><a data-step="2" data-intro="Login as a employer here" href="/#/employer.login">Employer login</a> </li>
               <li ng-hide="authenticated"><a href="/#/freelancer.register">Sign Up as Freelancer</a> </li>
 
 
