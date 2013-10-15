@@ -160,18 +160,18 @@ textarea {
 }
 body {
     margin: 0;
-    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-size: 14px;
     line-height: 20px;
     color: #333333;
     background-color: #ffffff;
+    font-family: "Conv_MuseoSans_300", Arial, sans-serif;
 }
 a {
     color: #0088cc;
     text-decoration: none;
 }
 a:hover, a:focus {
-    color: #005580;
+    color: #333333;
     text-decoration: underline;
 }
 .img-rounded {
@@ -627,7 +627,8 @@ ul.inline > li, ol.inline > li {
     *zoom: 1;
 }
 dl {
-    margin-bottom: 20px;
+	margin:  5px 0px 20px;
+	padding: 0px;
 }
 dt, dd {
     line-height: 20px;
@@ -636,6 +637,7 @@ dt {
     font-weight: bold;
 }
 dd {
+	margin: 0px;
     margin-left: 10px;
 }
 .dl-horizontal {

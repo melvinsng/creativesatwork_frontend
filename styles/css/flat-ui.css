@@ -639,26 +639,29 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 h1 {
     font-weight: 700;
+    margin-top: 10px;
 
 }
 h2 {
     font-weight: 700;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 h3 {
     font-weight: 700;
     margin-bottom: 4px;
-    margin-top: 2px;
+    margin-top: 8px;
 }
 h4 {
     font-weight: 600;
-    margin-top: 4px;
+    margin-top: 5px;
 }
 h5 {
     font-weight: 600;
+    margin-top: 5px;
 }
 h6 {
     font-weight: 600;
+    margin-top: 5px;
 }
 p {
     font-size: 14px;
@@ -889,7 +892,7 @@ a.muted:hover, a.muted:focus {
     background-color: #ec008a;
 }
 .btn.btn-primary:hover, .btn.btn-primary:focus, .btn-group:focus .btn.btn-primary.dropdown-toggle {
-    background-color: #f63da9;
+    background-color: #d5257a;
 }
 .btn.btn-primary:active, .btn-group.open .btn.btn-primary.dropdown-toggle, .btn.btn-primary.active {
     background-color: #16a085;
@@ -4101,7 +4104,7 @@ input.search-query {
     color: inherit;
 }
 .active .bottom-menu a, .bottom-menu a:hover, .bottom-menu a:focus {
-    color: #f63da9;
+    color: #d5257a;
 }
 .bottom-menu .label, .bottom-menu .badge {
     vertical-align: middle;
@@ -4172,7 +4175,7 @@ input.search-query {
     border-radius: 0 6px 6px 0;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover {
-    background-color: #f63da9;
+    background-color: #d5257a;
 }
 @media (max-width: 480px) {
     .nav-pills > li {
@@ -4206,10 +4209,10 @@ input.search-query {
     border-radius: 0;
 }
 .nav-pills > li > a:hover, .nav-pills > li > a:focus {
-    background-color: #f63da9;
+    background-color: #d5257a;
 }
 .nav-pills > li > a:active {
-    background-color: #f63da9;
+    background-color: #d5257a;
 }
 @media (max-width: 480px) {
     .nav-pills > li > a {
