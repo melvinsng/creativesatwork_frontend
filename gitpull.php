@@ -2,6 +2,7 @@
 
 echo getcwd() . "\n";
 echo '<p>beginning git pull...</p>';
-echo shell_exec('/usr/bin/git pull 2>&1');
-echo '<p>done</p>';
+echo shell_exec('/usr/bin/git pull origin master 2>&1');
+echo '<p>done!!</p>';
+echo 'Script updated on 15 oct';
 ?>
