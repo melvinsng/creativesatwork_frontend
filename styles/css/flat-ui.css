@@ -4138,7 +4138,7 @@ input.search-query {
     float: left;
     margin: 0 18px 0 0;
 }
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .bottom-menu {
         margin-left: -20px;
         margin-right: -20px;
@@ -4155,7 +4155,7 @@ input.search-query {
     .bottom-menu [class*="span"]:last-child .bottom-links {
         margin-bottom: 0;
     }
-}
+}*/
 .nav .dropdown-toggle .caret {
     border-bottom-color: #7f8c9a;
     border-left-width: 4px;

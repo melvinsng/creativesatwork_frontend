@@ -59,11 +59,11 @@ html body {
     background-repeat: repeat;
 }
 
-.body_container_home {
+.body_container_home, .home-section-div {
 
 
     background-color: #fff;
-
+	min-width: 960px;
 }
 
 .border-right-dotted {

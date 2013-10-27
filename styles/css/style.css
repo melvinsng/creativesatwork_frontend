@@ -261,7 +261,7 @@ color:  #666;
 }
 
 .about_us_area .au_content img{
-	width:  150px;
+	width:  140px;
 	margin-bottom: 10px;
 	
 }
@@ -520,6 +520,10 @@ text-align:right;
     background-color: #f6f6f6;
     border-top: 1px solid #ddd;
 }
+.homepage-step-div h3{
+	font-size: 20px;
+}
+
 .home-question {
     color: #636363;
     font-size: 20px;
@@ -610,7 +614,7 @@ font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 		text-align: center;
 	}
 }
-
+/*
 @media (max-width: 767px) {
     .tinynav { 
 		display: block;
@@ -651,7 +655,6 @@ font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 		margin: 0px;
 	}
 	.portfolio_area {
-		background-image: url("../img/workbg.png");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: auto 100%;
@@ -673,5 +676,5 @@ font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 }
 
 
-
+*/
 
