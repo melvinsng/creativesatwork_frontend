@@ -1,0 +1,39 @@
+.header{
+	display: none;
+}
+
+.sidebar-div{
+	display: none;
+}
+.footer-nav{
+	display: none;
+}
+.title-listing-1{
+	display: none;
+}
+a[href]:after { display:none; }
+
+.label, .badge {
+	padding: 5;
+	margin: 0px 12px 0px 0px;
+	border: 1px solid #999;
+}
+
+.slider_details_1 {
+	width: auto;
+	padding:  10px;
+	border: 1px solid #999;
+}
+.profile-div{
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px 80px;
+}
+
+html body{
+	font-family: Arial, sans-serif!important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span{
+	font-family: Arial, sans-serif!important;
+}

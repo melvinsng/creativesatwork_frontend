@@ -1,13 +1,14 @@
 <div class="body_container">
   <div class="container">
     <div class="row">
-      <div class="span3">
+      <div class="span3 sidebar-div">
         <div class="con_box uncon_box">
           <a class="btn btn-block btn-primary" href="/#/freelancers">Browse All Freelancers</a>
+          <a class="btn btn-block btn-success" href="javascript:window.print()">Print Resume</a>
         </div>
       </div>
       <!-- end of span3 -->
-      <div class="span9">
+      <div class="span9 profile-div">
         <h4 class="title-listing-1">Freelancer in <span class="title-listing-1-skill">{{freelancer.job_category.name}}</span></h4>
         <div class="slider_div con_box">
           <div class="slider_img_con">
@@ -58,6 +59,30 @@
           <p  ng-repeat="portfolio in freelancer.portfolios">
             <a target="_blank" ng-href="{{ portfolio.url }}">{{ portfolio.url }}</a>
           </p>
+          
+          <div class="hr1"></div>
+          
+          <div class="profile-work-div">	
+          	<div class="profile-work-img">
+          		<img nailthumb method="crop"   src="styles/img/portfolio/11.jpg" class="">
+          	</div>
+          	
+          	<div class="profile-work-img">
+          		<img nailthumb method="crop"   src="styles/img/portfolio/12.jpg" class="">
+          	</div>
+          	
+          	<div class="profile-work-img">
+          		<img nailthumb method="crop"   src="styles/img/portfolio/13.jpg" class="">
+          	</div>
+          	
+          	<div class="profile-work-img">
+          		<img nailthumb method="crop"   src="styles/img/portfolio/14.jpg" class="">
+          	</div>
+          	
+          			 
+		  </div>
+		       
+		   <div class="clearfix"></div>                   
           <div class="hr1"></div>
 
           <h6 class="con-box-title-1"><i class="icon-book"></i> Education</h6>
