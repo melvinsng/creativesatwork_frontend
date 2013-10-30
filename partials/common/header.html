@@ -22,7 +22,7 @@
               <li ng-hide="authenticated"><a class="btn btn-primary btn-mini" href="/#/employer.register">Post a Job</a></li>
 
               <li ng-show="authenticated && user_type == 'freelancer' ">
-                <a class="btn btn-primary btn-mini" href="/#/projects">Seek a Job</a></li>
+                <a class="btn btn-primary btn-mini" href="/#/projects">Seek a Project</a></li>
               <li ng-show="authenticated && !current_user.profile_incomplete"><a ng-href="/#/dashboard.{{ user_type }}">Dashboard <span ng-show="current_user.unread_notifications.length > 0" class="header-noti">{{ current_user.unread_notifications.length }}</span></a></li>
               <li ng-show="authenticated && current_user.profile_incomplete"><a ng-href="/#/dashboard.{{ user_type }}.profile">Dashboard <span class="header-noti">2</span></a></li>
 
