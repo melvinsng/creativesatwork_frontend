@@ -51,7 +51,7 @@
                 <span>&nbsp;Upload Profile Picture</span>
                 <input type="file" fileupload name="picture"
                        uploader-id="avatar-uploader"
-                       server-domain="http://sgattractions.com:3003"
+                       server-domain="http://creativesatwork.me:8989"
                        service-path="pictures" />
             </span>
               <span class="label label-primary">{{avatar_upload_state}}</span>
@@ -135,6 +135,31 @@
               <label class="control-label"></label>
               <a class="btn btn-info" ng-click="addPortfolio()">Add Portfolios</a>
             </div>
+
+            <div class="control-group"
+                 ng-repeat="portfolio_image in current_user.portfolio_images">
+              <label class="control-label"></label>
+              <img nailthumb height="320" width="400" method="resize"
+                   ng-src="{{portfolio_image.url}}">
+              <label class="control-label"></label>
+              <a class="btn btn-danger" ng-click="removePortfolioImage($index)">remove</a>
+            </div>
+
+
+            <div class="control-group">
+              <label class="control-label"></label>
+              <span class="btn btn-small btn-info fileupload-wrapper">
+                  <i class="fui-plus"></i>
+                  <span>&nbsp;Upload Portfolio Images</span>
+                  <input type="file" fileupload name="picture"
+                         uploader-id="portfolio-uploader"
+                         server-domain="http://creativesatwork.me:8989"
+                         service-path="pictures" />
+              </span>
+              <span class="label label-primary">{{portfolio_upload_state}}</span>
+            </div>
+
+
             <div class="settings_divider"></div>
 
             <div class="box_main_title">

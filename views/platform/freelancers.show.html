@@ -59,30 +59,16 @@
           <p  ng-repeat="portfolio in freelancer.portfolios">
             <a target="_blank" ng-href="{{ portfolio.url }}">{{ portfolio.url }}</a>
           </p>
-          
-          <div class="hr1"></div>
-          
-          <div class="profile-work-div">	
-          	<div class="profile-work-img">
-          		<img nailthumb method="crop"   src="styles/img/portfolio/11.jpg" class="">
-          	</div>
-          	
-          	<div class="profile-work-img">
-          		<img nailthumb method="crop"   src="styles/img/portfolio/12.jpg" class="">
-          	</div>
-          	
-          	<div class="profile-work-img">
-          		<img nailthumb method="crop"   src="styles/img/portfolio/13.jpg" class="">
-          	</div>
-          	
-          	<div class="profile-work-img">
-          		<img nailthumb method="crop"   src="styles/img/portfolio/14.jpg" class="">
-          	</div>
-          	
-          			 
-		  </div>
-		       
-		   <div class="clearfix"></div>                   
+
+          <div class="hr1" ng-show="freelancer.portfolio_images.length != 0"></div>
+
+          <div class="profile-work-div" >
+            <div class="profile-work-img" ng-repeat="image in freelancer.portfolio_images">
+              <img nailthumb method="crop" width="300"   ng-src="{{ image.url }}" class="">
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
           <div class="hr1"></div>
 
           <h6 class="con-box-title-1"><i class="icon-book"></i> Education</h6>
