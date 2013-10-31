@@ -64,7 +64,7 @@
 
           <div class="profile-work-div" >
             <div class="profile-work-img" ng-repeat="image in freelancer.portfolio_images">
-              <img nailthumb method="crop" width="300"   ng-src="{{ image.url }}" class="">
+              <a href="{{ image.url }}" target="_blank"><img nailthumb method="crop" width="300"   ng-src="{{ image.url }}" class=""></a>
             </div>
           </div>
 
