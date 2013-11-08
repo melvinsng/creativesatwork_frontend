@@ -49,7 +49,7 @@
                   </div>
                   <div ng-switch-when="project_active">
                     <div ng-show="userEmployed">
-                      <p>You are working on this project with {{ project.employer.first_name }} {{ project.employer.last_name }}</p>
+                      <p>You are working on this project with {{ project.employer.first_name }} </p>
                     </div>
                     <div ng-hide="userEmployed">
                       <p>This project is taken by other freelancer</p>
@@ -75,7 +75,7 @@
 
 
                         <div class="pull-left">
-                          <select ng-model="selected_bidder_id" ng-options="bidder.id as bidder.first_name+' '+bidder.last_name for bidder in project.bidders"></select>
+                          <select ng-model="selected_bidder_id" ng-options="bidder.id as bidder.first_name for bidder in project.bidders"></select>
                         </div>
                         <div class="pull-right">
                           <a ng-click="acceptBid(selected_bidder_id)" class="btn btn-header-nav btn-success" href>Accept Bid</a>
@@ -85,7 +85,7 @@
                   </div>
                   <div ng-switch-when="project_active">
                     <div ng-show="userIsEmployer">
-                      <p>You are working on this project with {{ project.freelancer.first_name }} {{ project.freelancer.last_name }}</p>
+                      <p>You are working on this project with {{ project.freelancer.first_name }} </p>
                     </div>
                   </div>
                   <div ng-switch-when="project_completed">
