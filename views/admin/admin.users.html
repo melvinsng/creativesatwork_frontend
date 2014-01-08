@@ -1,0 +1,57 @@
+<div class="body_container">
+  <div class="container">
+    <div class="row">
+      <div class="span3">
+        <div class="con_box uncon_box">
+          <a class="btn btn-block btn-danger" ng-href="{{ svcEndpoint }}/common/export_freelancers.csv">Export</a>
+          <a class="btn btn-block btn-primary" href ng-click="clearFilters()">Clear filters</a>
+        </div>
+        <div class="con_box listing-sidebar sidebar-search">
+          <h6 class="title-sidebar-1">Find a freelancer</h6>
+          <form class="form-search">
+            <div class="input-append">
+              <input search-input type="text" class="search-query span2" placeholder="Search">
+              <button search-button type="submit" class="btn btn-large"> <i class="fui-search"></i> </button>
+            </div>
+          </form>
+        </div>
+        <job-categories-filter></job-categories-filter>
+      </div>
+      <!-- end of span3 -->
+
+      <div class="span9">
+        <h4 ng-show="current_job_category != 'All'" class="title-listing-1">Freelancers specialized in <span class="title-listing-1-skill">{{current_job_category}}</span></h4>
+
+        <h3>Freelancers</h3>
+        <table class="admin-table table table-bordered table-condensed table-striped">
+          <tbody><tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>Account Status</th>
+            <th>Registered At</th>
+            <th>Actions</th>
+
+          </tr>
+          <tr ng-repeat="user in freelancers">
+            <td>{{ user.first_name }}</td>
+            <td>{{ user.last_name }}</td>
+            <td><a ng-href="mailto:{{ user.email }}">{{ user.email }}</a> </td>
+            <td>{{user.account_status}}</td>
+            <td> {{ user.created_at  | date:'MM/dd/yyyy @ h:mma'}}</td>
+            <td>
+              <div ng-show="user._type == 'Freelancer'">
+                <a ng-href="/#/freelancers.show/{{ freelancer.id }}">View Details</a>
+              </div>
+            </td>
+          </tr>
+
+          </tbody></table>
+
+        <div class="pull-right" pagination num-pages="total_pages" current-page="query.page" max-size="9"></div>
+
+      </div>
+      <!-- end of span9 -->
+    </div>
+  </div>
+</div>
