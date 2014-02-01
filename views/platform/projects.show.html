@@ -114,7 +114,7 @@
           <div class="hr1"></div>
           <h6 ng-show="project.additional_info" class="con-box-title-1"><i class="icon-file-text"></i> More info</h6>
           <p ng-show="project.additional_info" ng-bind-template="{{ project.additional_info }}"></p>
-
+          <h6 ng-show="user_type == 'admin'">Project Owner: <a ng-href="mailto:{{ project.employer.email }}">{{ project.employer.email }}</a></h6>
 
         </div>
         <!-- end of con_box -->

@@ -16,6 +16,13 @@
           </form>
         </div>
         <job-categories-filter></job-categories-filter>
+        <div class="con_box listing-sidebar sidebar-search">
+          <h6 class="title-sidebar-1">Menu</h6>
+          <hr>
+          <a href="/#/admin.users">Freelancers</a>
+          <hr>
+          <a href="/#/admin.employers">Project Owners</a>
+        </div>
       </div>
       <!-- end of span3 -->
 
@@ -27,6 +34,8 @@
           <tbody><tr>
             <th>First name</th>
             <th>Last name</th>
+            <th>Job Title</th>
+            <th>Mobile</th>
             <th>Email</th>
             <th>Account Status</th>
             <th>Registered At</th>
@@ -36,12 +45,14 @@
           <tr ng-repeat="user in freelancers">
             <td>{{ user.first_name }}</td>
             <td>{{ user.last_name }}</td>
+            <td>{{ user.job_title }}</td>
+            <td>{{ user.phone }}</td>
             <td><a ng-href="mailto:{{ user.email }}">{{ user.email }}</a> </td>
             <td>{{user.account_status}}</td>
             <td> {{ user.created_at  | date:'MM/dd/yyyy @ h:mma'}}</td>
             <td>
               <div ng-show="user._type == 'Freelancer'">
-                <a ng-href="/#/freelancers.show/{{ freelancer.id }}">View Details</a>
+                <a ng-href="/#/freelancers.show/{{ user.id }}">View Details</a>
               </div>
             </td>
           </tr>
