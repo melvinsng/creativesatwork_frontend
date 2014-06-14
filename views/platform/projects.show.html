@@ -49,7 +49,6 @@
                   </div>
                   <div ng-switch-when="project_active">
                     <div ng-show="userEmployed">
-                      <p>You are working on this project with {{ project.employer.first_name }} {{ project.employer.last_name }}</p>
                       <p>You are working on this project with {{ project.employer.first_name }} </p>
                     </div>
                     <div ng-hide="userEmployed">
@@ -76,7 +75,6 @@
 
 
                         <div class="pull-left">
-                          <select ng-model="selected_bidder_id" ng-options="bidder.id as bidder.first_name+' '+bidder.last_name for bidder in project.bidders"></select>
                           <select ng-model="selected_bidder_id" ng-options="bidder.id as bidder.first_name for bidder in project.bidders"></select>
                         </div>
                         <div class="pull-right">
@@ -87,7 +85,6 @@
                   </div>
                   <div ng-switch-when="project_active">
                     <div ng-show="userIsEmployer">
-                      <p>You are working on this project with {{ project.freelancer.first_name }} {{ project.freelancer.last_name }}</p>
                       <p>You are working on this project with {{ project.freelancer.first_name }} </p>
                     </div>
                   </div>
@@ -117,7 +114,6 @@
           <div class="hr1"></div>
           <h6 ng-show="project.additional_info" class="con-box-title-1"><i class="icon-file-text"></i> More info</h6>
           <p ng-show="project.additional_info" ng-bind-template="{{ project.additional_info }}"></p>
-
           <h6 ng-show="user_type == 'admin'">Project Owner: <a ng-href="mailto:{{ project.employer.email }}">{{ project.employer.email }}</a></h6>
 
         </div>
