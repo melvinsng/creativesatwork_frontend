@@ -10,19 +10,15 @@
       <!-- end of span3 -->
       <div class="span9 profile-div">
         <h4 class="title-listing-1">Freelancer in <span class="title-listing-1-skill">{{freelancer.job_category.name}}</span></h4>
-        
+
         <div class="resume-logo-div"><img src="styles/img/logo-w450.png"></div>
-        
+
         <div class="slider_div con_box">
           <div class="slider_img_con">
-<<<<<<< HEAD
-            <a href=""><img class="img_refit" nailthumb height="125" width="125" method="crop" ng-src="{{ freelancer.photo_url }}"></a>
-=======
             <a href="">
               <img ng-if="freelancer.photo_url == null || freelancer.photo_url == ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" src="styles/img/profile.jpg"></a>
             <img ng-if="freelancer.photo_url != null && freelancer.photo_url != ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" ng-src="{{freelancer.photo_url}}"></a>
             </a>
->>>>>>> FETCH_HEAD
             <div class="clearfix"></div>
           </div>
           <div class="slider_details_con">
