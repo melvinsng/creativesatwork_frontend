@@ -15,6 +15,7 @@
         <li><a href ng-click="setJobTitle($event)">Copywriter</a></li>
         <li><a href ng-click="setJobTitle($event)">Journalist</a></li>
         <li><a href ng-click="setJobTitle($event)">Editor</a></li>
+        <li ng-repeat="x in jobTitles.Writing"><a href ng-click="setJobTitle($event)">{{x}}</a></li>
       </ul>
     </accordion-group>
     <accordion-group heading="Design">
@@ -29,6 +30,7 @@
         <li><a href ng-click="setJobTitle($event)">Set Designer</a></li>
         <li><a href ng-click="setJobTitle($event)">Wardrode Designer</a></li>
         <li><a href ng-click="setJobTitle($event)">Web Designer</a></li>
+        <li ng-repeat="x in jobTitles.Design"><a href ng-click="setJobTitle($event)">{{x}}</a></li>
       </ul>
     </accordion-group>
     <accordion-group heading="Production">
@@ -51,6 +53,7 @@
         <li><a href ng-click="setJobTitle($event)">DI Artist</a></li>
         <li><a href ng-click="setJobTitle($event)">Audio Producer</a></li>
         <li><a href ng-click="setJobTitle($event)">Project Manager</a></li>
+        <li ng-repeat="x in jobTitles.Production"><a href ng-click="setJobTitle($event)">{{x}}</a></li>
       </ul>
     </accordion-group>
     <accordion-group heading="Others">
@@ -59,6 +62,7 @@
         <li><a href ng-click="setJobTitle($event)">Translator</a></li>
         <li><a href ng-click="setJobTitle($event)">Marketing </a></li>
         <li><a href ng-click="setJobTitle($event)">PR</a></li>
+        <li ng-repeat="x in jobTitles.Others"><a href ng-click="setJobTitle($event)">{{x}}</a></li>
       </ul>
     </accordion-group>
   </accordion>

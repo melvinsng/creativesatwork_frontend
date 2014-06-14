@@ -1,4 +1,4 @@
-<div class="body_container">
+w<div class="body_container">
   <div class="container">
     <div class="row">
       <div class="span3">
@@ -24,12 +24,17 @@
         <div ng-repeat="freelancer in freelancers">
           <div class="slider_div con_box">
             <div class="slider_img_con"><a ng-href="/#/freelancers.show/{{ freelancer.id }}">
+<<<<<<< HEAD
               <img class="img_refit" nailthumb method="crop" width="125" height="125" replace-animation="fade" ng-src="{{freelancer.photo_url}}"></a>
+=======
+              <img ng-if="freelancer.photo_url == null || freelancer.photo_url == ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" src="styles/img/profile.jpg"></a>
+              <img ng-if="freelancer.photo_url != null && freelancer.photo_url != ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" ng-src="{{freelancer.photo_url}}"></a>
+>>>>>>> FETCH_HEAD
               <div class="clearfix"></div>
             </div>
             <div class="slider_details_con">
               <a ng-href="/#/freelancers.show/{{ freelancer.id }}">
-                <h3>{{freelancer.first_name}} {{freelancer.last_name}}  <small>{{ freelancer.job_title }}</small></h3>
+                <h3>{{freelancer.first_name}} <small>{{ freelancer.job_title }}</small></h3>
               </a>
               <div class="slider_skills">
                   <span class="demo-inline">
