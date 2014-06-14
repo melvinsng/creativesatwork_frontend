@@ -373,6 +373,12 @@ html body {
 
 /*  other-freelancers-div
 ---------------------------------------------------------------- */
+.resume-logo-div{
+	display: none;
+	width: 280px;
+	margin: 0px auto 40px;
+}
+
 
 .other-freelancers .other-freelancers-img {
     width: 52px;

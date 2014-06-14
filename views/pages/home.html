@@ -72,7 +72,8 @@
             <div class="span3 work-box" ng-repeat="freelancer in freelancers_start">
               <div>
                 <a ng-href="/#/freelancers.show/{{ freelancer.id }}">
-                  <img class="center" ng-src="{{ freelancer.photo_url }}">
+                <img class="center" ng-src="{{ freelancer.photo_url }}" nailthumb method="crop" width="225" height="225">
+
                 </a>
               </div>
               <div class="work-description">
@@ -86,7 +87,9 @@
             <div class="span3 work-box" ng-repeat="freelancer in freelancers_end">
               <div>
                 <a ng-href="/#/freelancers.show/{{ freelancer.id }}">
-                  <img class="center" ng-src="{{ freelancer.photo_url }}">
+                  <img class="center" ng-src="{{ freelancer.photo_url }}" nailthumb method="crop" width="225" height="225">
+                  
+                  <!--<a href="{{ image.url }}" target="_blank"><img nailthumb method="crop" width="300"   ng-src="{{ image.url }}" class=""></a>-->
                 </a>
               </div>
               <div class="work-description">
