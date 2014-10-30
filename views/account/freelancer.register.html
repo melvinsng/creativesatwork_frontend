@@ -47,6 +47,12 @@
                 <div ng-show="userRegForm.confirm_password.$error.passwordVerify">
                   Passwords do not match</div>
 
+                <div class="offset1">
+                  <label>
+                    <input type="checkbox" required ng-model="terms_and_conditions" name="terms_and_conditions">&nbsp;I have read the <a target="_blank" href="/#/terms">Terms and Conditions</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </label>
+                </div>
+
                 <div class="control-group">
                   <label class="control-label" for="settings_save"></label>
                   <div class="controls">
