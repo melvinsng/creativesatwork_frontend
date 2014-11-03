@@ -1,0 +1,28 @@
+
+.page-content{
+	padding: 20px;
+}
+
+.tagcloud a{
+	font-size: 14px!important;
+}
+
+.load-more-div a.none{
+	
+}
+
+.load-more-div a.none:hover{
+	background-color: #ddd;
+}
+
+.breadcrumbs{
+	margin-bottom: 20px;
+}
+.breadcrumbs a{
+	color: #aaa;
+}
+
+
+.logo-area{
+	text-align: center;
+}

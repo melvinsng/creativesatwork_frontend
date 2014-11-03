@@ -1,0 +1,8 @@
+[08-Sep-2014 06:32:46 UTC] PHP Parse error:  syntax error, unexpected T_ELSE in /home/qlickand/public_html/globe-hop-wp/wp-content/themes/globehop/archive.php on line 95
+[08-Sep-2014 06:34:09 UTC] PHP Parse error:  syntax error, unexpected T_ELSE in /home/qlickand/public_html/globe-hop-wp/wp-content/themes/globehop/archive.php on line 149
+[08-Sep-2014 06:34:33 UTC] PHP Parse error:  syntax error, unexpected T_ELSE in /home/qlickand/public_html/globe-hop-wp/wp-content/themes/globehop/archive.php on line 149
+[08-Sep-2014 07:41:51 UTC] PHP Fatal error:  Call to undefined function next_previous_link() in /home/qlickand/public_html/globe-hop-wp/wp-content/themes/globehop/index.php on line 41
+[08-Sep-2014 07:42:13 UTC] PHP Fatal error:  Call to undefined function next_previous_link() in /home/qlickand/public_html/globe-hop-wp/wp-content/themes/globehop/index.php on line 41
+[08-Sep-2014 07:42:16 UTC] PHP Fatal error:  Call to undefined function next_previous_link() in /home/qlickand/public_html/globe-hop-wp/wp-content/themes/globehop/index.php on line 41
+[08-Sep-2014 07:42:39 UTC] PHP Fatal error:  Call to undefined function next_previous_link() in /home/qlickand/public_html/globe-hop-wp/wp-content/themes/globehop/index.php on line 41
+[21-Sep-2014 11:22:36 UTC] PHP Fatal error:  Call to undefined function the_breadcrumb() in /home/qlickand/public_html/globe-hop-wp/wp-content/themes/globehop/single.php on line 18
