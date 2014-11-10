@@ -296,6 +296,87 @@ color:  #666;
 	
 }
 
+.services_area .span6.right{
+	border-left: 1px solid #ddd;
+	padding-left: 40px;
+	
+}
+.services_area .span6{
+	padding: 0px 20px;
+}
+.services_area{
+	text-align: center;
+}
+.services_area p{
+
+}
+.services-icon img{
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+h2.services-title{
+	margin-bottom: 30px;	
+}
+
+.portfolio-area{
+	background-color: #f6f6f6;
+	text-align: center;
+}
+
+.portfolio-area .thumbnail{
+	background-color: #fff;
+	padding: 0px;
+}
+.portfolio-area .thumbnail h4{
+	font-size: 18px;
+	
+	line-height: 24px;
+	height: 24px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}
+.portfolio-area .thumbnail p{
+	font-size: 14px;
+	
+	line-height: 20px;
+	height: 60px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}
+
+.showreels-video{
+	
+}
+
+.showreels-video iframe{
+	width: 100%;
+	
+}
+
+.showreels-area{
+	background-color: #fff!important;
+}
+
+.team-pic img{
+	-webkit-border-radius: 9999px;
+	-moz-border-radius: 9999px;
+	border-radius: 9999px;
+}
+.grey-bg{
+	background-color: #f6f6f6!important;
+}
+
+.white-bg{
+	background-color: #fff!important;
+}
+
 .au_content {
     margin: 0 auto;
     max-width: 960px;
