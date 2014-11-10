@@ -322,9 +322,11 @@ color:  #666;
 	
 }
 
+
 .services_area .span6.right{
 	border-left: 1px solid #ddd;
 	padding-left: 40px;
+	
 	
 }
 .services_area .span6{
@@ -332,6 +334,7 @@ color:  #666;
 }
 .services_area{
 	text-align: center;
+	margin-top: 30px;
 }
 .services_area p{
 
