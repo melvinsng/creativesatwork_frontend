@@ -130,6 +130,7 @@ color:  #fff;
 	font-size: 28px;
 	line-height:  36px;
     font-family: "Conv_MuseoSans_500", Arial, sans-serif;	
+    margin-bottom: 10px;
 	
 }
 
@@ -167,7 +168,14 @@ img.center {
 
 .services-button{
 	margin-top: 20px;
+	
 }
+
+.services-button .btn{
+	
+	
+}
+
 .desc-1{
 	text-align: center;
 	font-size: 16px;
@@ -180,10 +188,28 @@ img.center {
 	background-image: url("../img/banner.png");
 	background-position:center top;
 	background-repeat:no-repeat;
-	min-height:540px;
+	min-height:560px;
 	padding:30px 0;
 	background-size: 100%;
-	}
+	padding-top: 70px;
+}
+.banner-home2{
+	background-image: url("../img/banner1.jpg");
+	padding-top: 150px;
+	text-align: center;
+}
+
+.banner-home2 p{
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.home-flexslider .flex-control-nav{
+	bottom: 6px;
+	z-index: 900;
+	
+}	
+	
 .choice-box {
     padding-top: 30px;
 }
