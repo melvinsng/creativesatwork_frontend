@@ -28,7 +28,7 @@
 
               <li ng-show="authenticated"><a href ng-click="logout()">Logout</a></li>
 
-            </ul>
+            </ul> 
           </div>
         </div>
         <div class="row">
@@ -45,7 +45,10 @@
                   <ul class="nav top-2">
                     <li id="nav-home"><a href="/#/home">Home</a></li>
                     <li id="nav-about"><a href="/#/about">About Us</a></li>
+                    <li id="nav-about"><a href="/#/services">Services</a></li>
                     <li id="nav-contact"><a href="/#/contact">Contact</a></li>
+                    
+                    <li id="nav-blog"><a href="/blog/">Blog & News</a></li>
                     <li ng-show="authenticated" ui-route="#/projects" ng-class="{active: $uiRoute}"><a href="/#/projects">Projects</a></li>
                     <li ng-show="authenticated" ui-route="#/freelancers" ng-class="{active: $uiRoute}"><a href="/#/freelancers">Freelancers</a></li>
                   </ul>

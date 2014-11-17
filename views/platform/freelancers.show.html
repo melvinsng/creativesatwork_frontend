@@ -10,12 +10,15 @@
       <!-- end of span3 -->
       <div class="span9 profile-div">
         <h4 class="title-listing-1">Freelancer in <span class="title-listing-1-skill">{{freelancer.job_category.name}}</span></h4>
+
+        <div class="resume-logo-div"><img src="styles/img/logo-w450.png"></div>
+
         <div class="slider_div con_box">
           <div class="slider_img_con">
             <a href="">
-                <img ng-if="freelancer.photo_url == null || freelancer.photo_url == ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" src="styles/img/profile.jpg"></a>
-                <img ng-if="freelancer.photo_url != null && freelancer.photo_url != ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" ng-src="{{freelancer.photo_url}}"></a>
-			</a>
+              <img ng-if="freelancer.photo_url == null || freelancer.photo_url == ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" src="styles/img/profile.jpg"></a>
+            <img ng-if="freelancer.photo_url != null && freelancer.photo_url != ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" ng-src="{{freelancer.photo_url}}"></a>
+            </a>
             <div class="clearfix"></div>
           </div>
           <div class="slider_details_con">
@@ -82,6 +85,21 @@
           <p ng-bind="freelancer.education_and_certificates"></p>
           <h5 ng-show="freelancer.accolades_and_awards">Accolades and Awards</h5>
           <p ng-show="freelancer.accolades_and_awards" ng-bind="freelancer.accolades_and_awards"></p>
+
+
+          <a href ng-click="need_more_info = true">Need more information?</a>
+
+          <div ng-init="need_more_info=false" ng-show="need_more_info == true">
+            <form name="question_form" novalidate ng-submit="submitQuestionToAdmin()">
+              <textarea ng-model="question_from_employer" class="span8" required>
+
+              </textarea>
+              <button type="submit" class="btn btn-header-nav btn-primary">Submit</button>
+            </form>
+          </div>
+
+          <div class="hr1"></div>
+          <h6 ng-show="user_type == 'admin'">Freelancer email: <a ng-href="mailto:{{ freelancer.email }}">{{ freelancer.email }}</a></h6>
 
 
         </div>

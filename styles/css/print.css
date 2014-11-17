@@ -19,10 +19,16 @@ a[href]:after { display:none; }
 	border: 1px solid #999;
 }
 
+.slider_details_con h3{
+	font-size: 32px;
+	line-height: 36px;
+	height: 36px;
+}
+
 .slider_details_1 {
 	width: auto;
 	padding:  10px;
-	border: 1px solid #999;
+	border: 3px solid #ddd;
 }
 .profile-div{
 	width: 100%;
@@ -47,4 +53,14 @@ h1, h2, h3, h4, h5, h6, p, span{
 }
 .slider_div.projects_listing_div{
 	display: none;
+}
+
+.resume-logo-div{
+	display: block;
+}
+
+.con_box{
+	border: 5px solid #ddd;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
 }
