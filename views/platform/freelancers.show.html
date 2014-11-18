@@ -1,38 +1,24 @@
+
 <div class="body_container">
   <div class="container">
     <div class="row">
       <div class="span3 sidebar-div">
-        <div class="con_box uncon_box">
-          <a class="btn btn-block btn-primary" href="/#/freelancers">Browse All Freelancers</a>
-          <a class="btn btn-block btn-success" href="javascript:window.print()">Print Resume</a>
-        </div>
+        <div class="con_box uncon_box"> <a class="btn btn-block btn-primary" href="/#/freelancers">Browse All Freelancers</a> <a class="btn btn-block btn-success" href="javascript:window.print()">Print Resume</a> </div>
       </div>
       <!-- end of span3 -->
       <div class="span9 profile-div">
         <h4 class="title-listing-1">Freelancer in <span class="title-listing-1-skill">{{freelancer.job_category.name}}</span></h4>
-
         <div class="resume-logo-div"><img src="styles/img/logo-w450.png"></div>
-
         <div class="slider_div con_box">
-          <div class="slider_img_con">
-            <a href="">
-              <img ng-if="freelancer.photo_url == null || freelancer.photo_url == ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" src="styles/img/profile.jpg"></a>
-            <img ng-if="freelancer.photo_url != null && freelancer.photo_url != ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" ng-src="{{freelancer.photo_url}}"></a>
-            </a>
+          <div class="slider_img_con"> <a href=""> <img ng-if="freelancer.photo_url == null || freelancer.photo_url == ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" src="styles/img/profile.jpg"></a> <img ng-if="freelancer.photo_url != null && freelancer.photo_url != ''" class="img_refit" nailthumb method="resize" width="125" height="125" replace-animation="fade" ng-src="{{freelancer.photo_url}}"></a> </a>
             <div class="clearfix"></div>
           </div>
-          <div class="slider_details_con">
-            <a href ng-show="authenticated && current_user.id == freelancer.id">
-              <h3>{{ freelancer.first_name }} {{ freelancer.last_name }}| {{ freelancer.job_title }}</h3>
+          <div class="slider_details_con"> <a href ng-show="authenticated && current_user.id == freelancer.id">
+            <h3>{{ freelancer.first_name }} {{ freelancer.last_name }}| {{ freelancer.job_title }}</h3>
+            </a> <a href ng-show="!authenticated || (authenticated && current_user.id != freelancer.id)">
+            <h3>{{ freelancer.first_name }} | {{ freelancer.job_title }}</h3>
             </a>
-            <a href ng-show="!authenticated || (authenticated && current_user.id != freelancer.id)">
-              <h3>{{ freelancer.first_name }} | {{ freelancer.job_title }}</h3>
-            </a>
-            <div class="slider_skills">
-              <span class="demo-inline">
-                <span class="label" ng-repeat="skill in freelancer.skills">{{ skill }}</span>
-              </span>
-            </div>
+            <div class="slider_skills"> <span class="demo-inline"> <span class="label" ng-repeat="skill in freelancer.skills">{{ skill }}</span> </span> </div>
             <!-- /row -->
             <div class="slider_details_1">
               <div class="slider_price"><span>Day Rate:</span> ${{ freelancer.day_rate }} ++</div>
@@ -43,52 +29,38 @@
           <div class="clearfix"></div>
         </div>
         <!-- end of slider_div -->
-
+        
         <div ng-show=" user_type == 'employer' " class="slider_div projects_listing_div con_box">
           <div class="final-offer-div">
             <div class="final-offer-div-desc">Offer my project: </div>
-            <select ng-model="offering_project_id" ng-options="project.id as project.title for project in current_user.pending_projects"></select>
-            <a ng-click="offerProject()" class="btn btn-header-nav btn-primary" href>Confirm</a>
-          </div>
+            <select ng-model="offering_project_id" ng-options="project.id as project.title for project in current_user.pending_projects">
+            </select>
+            <a ng-click="offerProject()" class="btn btn-header-nav btn-primary" href>Confirm</a> </div>
           <div class="clearfix"></div>
         </div>
-
         <div class="slider_div con_box">
-
           <h6 class="con-box-title-1"><i class="icon-coffee"></i> About</h6>
           <p ng-bind="freelancer.other_information"></p>
           <div class="hr1"></div>
-
           <h6 class="con-box-title-1"><i class="icon-briefcase"></i> Work</h6>
           <h5>Years of experience</h5>
           <p ng-bind="freelancer.years_of_experience"></p>
           <h5>Professional History</h5>
           <p ng-bind="freelancer.professional_history"></p>
           <h5 ng-show="freelancer.portfolios.length != 0">Portfolios</h5>
-          <p  ng-repeat="portfolio in freelancer.portfolios">
-            <a target="_blank" ng-href="{{ portfolio.url }}">{{ portfolio.url }}</a>
-          </p>
-
+          <p  ng-repeat="portfolio in freelancer.portfolios"> <a target="_blank" ng-href="{{ portfolio.url }}">{{ portfolio.url }}</a> </p>
           <div class="hr1" ng-show="freelancer.portfolio_images.length != 0"></div>
-
           <div class="profile-work-div" >
-            <div class="profile-work-img" ng-repeat="image in freelancer.portfolio_images">
-              <a href="{{ image.url }}" target="_blank"><img nailthumb method="crop" width="300"   ng-src="{{ image.url }}" class=""></a>
-            </div>
+            <div class="profile-work-img" ng-repeat="image in freelancer.portfolio_images"> <a href="{{ image.url }}" target="_blank"><img nailthumb method="crop" width="300"   ng-src="{{ image.url }}" class=""></a> </div>
           </div>
-
           <div class="clearfix"></div>
           <div class="hr1"></div>
-
           <h6 class="con-box-title-1"><i class="icon-book"></i> Education</h6>
           <h5>Education and Certificates</h5>
           <p ng-bind="freelancer.education_and_certificates"></p>
           <h5 ng-show="freelancer.accolades_and_awards">Accolades and Awards</h5>
           <p ng-show="freelancer.accolades_and_awards" ng-bind="freelancer.accolades_and_awards"></p>
-
-
           <a href ng-click="need_more_info = true">Need more information?</a>
-
           <div ng-init="need_more_info=false" ng-show="need_more_info == true">
             <form name="question_form" novalidate ng-submit="submitQuestionToAdmin()">
               <textarea ng-model="question_from_employer" class="span8" required>
@@ -97,15 +69,104 @@
               <button type="submit" class="btn btn-header-nav btn-primary">Submit</button>
             </form>
           </div>
-
           <div class="hr1"></div>
           <h6 ng-show="user_type == 'admin'">Freelancer email: <a ng-href="mailto:{{ freelancer.email }}">{{ freelancer.email }}</a></h6>
-
-
         </div>
         <!-- end of con_box -->
+        
+        <div class="con_box listing-reviews">
+          <div class="listing-reviews-title">
+            <div class="row-fluid">
+              <h4 class="span12">Total Reviews: 1</h4>
+            </div>
+          </div>
+          <hr>
+          <div class="row-fluid review-action">
+            <div class="span4"> <button  data-toggle="modal" data-target="#modal-review" class="btn btn-primary">Write a Review</button> </div>
+            <div class="span8">
+              <div class="pull-right"> <strong>Sort By</strong>&nbsp;&nbsp;&nbsp;
+                <div class="btn-group">
+                  <button class="btn btn-info">Most Recent</button>
+                  <button class="btn">Rating</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="write-review-div">
+          	
+          	
+          	<div class="row-fluid">
+          	<h4>Write your review</h4>
+          	<div class="review-star-item">
+          		<p>Review rating 1</p>
+          		<div class="service-rate-item service-rate-item-input"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+          		
+          	</div>
+          	
+          	<div class="review-star-item">
+          			<p>Review rating 2</p>
+          			<div class="service-rate-item service-rate-item-input"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+          			
+          		</div>
+          		<div class="review-star-item">
+          				<p>Review rating 3</p>
+          				<div class="service-rate-item service-rate-item-input"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+          				
+          			</div>
+          			
+          	
+          	
+          		<div class="review-textarea">
+          	<textarea class="form-control span12" rows="4"></textarea>
+          		</div>
+          	</div>
+          	
+          	
+          	<button type="button" class="btn btn-primary">Submit</button>
+          
+          </div>
+          
+          
+          
+         <hr>
+          <div class="row-fluid listing-review-item">
+            <div class="span12">
+              <div class="row-fluid">
+                <h4 class="span12">[Someone Name] <span class="text-grey pull-right small">May 12, 2013</span></h4>
+              </div>
+              <div class="row-fluid">
+                
+                <div class="span4">
+                  <div class="pull-left"> <div class="service-rate-item"><i class="icon-star icon-star-active"></i><i class="icon-star icon-star-active"></i><i class="icon-star icon-star-active"></i><i class="icon-star"></i><i class="icon-star"></i> <span>Review rating 1</span></div>
+                 </div>
+                 </div>
+                <div class="span4">  
+                  
+                  <div class="service-rate-item"><i class="icon-star icon-star-active"></i><i class="icon-star icon-star-active"></i><i class="icon-star icon-star-active"></i><i class="icon-star"></i><i class="icon-star"></i> <span>Review rating 2</span></div>
+                  
+                  </div>
+                  
+                  <div class="span4">  
+                    
+                    <div class="service-rate-item"><i class="icon-star icon-star-active"></i><i class="icon-star icon-star-active"></i><i class="icon-star icon-star-active"></i><i class="icon-star"></i><i class="icon-star"></i> <span>Review rating 3</span></div>
+                    
+                    </div>
+                    
+                </div>
+              </div>
+              <p class="review-desc">Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. </p>
+            </div>
+          
+          <hr>
+          
+          
+          <div class="show-more-div"><a href="" class="btn btn-more-info">Show more</a></div>
+          
+          
+        </div>
       </div>
-      <!-- end of span9 -->
+      <!-- end of span9 --> 
     </div>
   </div>
 </div>

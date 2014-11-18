@@ -574,6 +574,96 @@ html body {
 
 /*  profile settings
 ---------------------------------------------------------------- */
+
+.btn.btn-more-info{
+	border: 1px solid #ccc;
+	background-color: #fff!important;
+	color: #666;
+}
+.btn.btn-more-info:hover{
+	color: #111!important;
+	background-color: #f6f6f6!important;
+}
+.show-more-div{
+	text-align: center;
+}
+
+h4 small, h4 .small{
+	font-size: 14px;
+	line-height: 18px;
+	
+}
+.text-grey {
+color: #999999;
+}
+
+.listing-reviews{
+	
+}
+.listing-reviews h4{
+	margin: 0px;
+	
+}
+
+.btn-group > .btn:first-of-type{
+	border-top-left-radius: 99px;
+	border-bottom-left-radius: 99px;
+}
+.btn-group > .btn:last-of-type {
+border-top-right-radius: 99px;
+border-bottom-right-radius: 99px;
+}
+
+.listing-review-item h4{
+	margin-bottom: 10px;
+}
+
+.listing-reviews i {
+	color: #ddd;
+}
+
+i.icon-star-active{
+	color: #fcd20b!important;
+}
+.service-rate-item{
+	display: block;
+	line-height: 20px;
+	margin-bottom: 8px;
+	font-size: 12px;
+}
+.service-rate-item span{
+	margin-left: 5px;
+}
+
+.review-action .btn{
+	font-size: 13px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.listing-review-item .review-desc{
+	margin-bottom: 0px;
+}
+.service-rate-item.service-rate-item-input .icon-star:hover{
+	color: #fcd20b!important;
+}
+.write-review-div{
+	padding: 15px 15px 5px;
+	background-color: #eee;
+}
+.review-star-item{
+	margin-bottom: 12px;
+}
+.listing-reviews .write-review-div h4{
+	margin-bottom: 12px;
+}
+.review-star-item p{
+	margin-bottom: 2px;
+}
+
+
+/*  profile settings
+---------------------------------------------------------------- */
 .control-group {
     margin-bottom: 9px;
 }
@@ -681,7 +771,7 @@ html body {
 .bottom-menu-inverse {
     background-color: #fff;
     color: #666;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #ffd5ee;
 }
 
 
