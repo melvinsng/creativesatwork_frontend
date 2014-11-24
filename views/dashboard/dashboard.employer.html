@@ -2,22 +2,155 @@
   <div class="container">
     <div class="row">
       <div class="span3">
-
         <div class="box_main sidenav">
           <div ng-include src="'partials/dashboard/employer.side_menu.html'"></div>
         </div>
-
       </div>
-
       <div class="span9">
-        <employer-pending-projects projects="pending_projects"></employer-pending-projects>
-
+        <h3 class="title-listing-1 margin-bottom-10" style="margin-top: 0px;"> Recent Messages <span class="ng-binding"> (4) </span> </h3>
+        <div class="messages-table">
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>Sender</th>
+                <th>Last Message</th>
+                <th>Updated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="m-table-name"><a href=""><img src="/styles/img/team-melvin.jpg">[name]</a></td>
+                <td class="m-table-desc"><a href="">
+                  <p>Fabio vel iudice vincam, sunt in culpa qui officia o vel iudice vincam, sunt in culpa qui officia o vel iudice vincam, sunt in culpa qui officia.</p>
+                  </a></td>
+                <td class="m-table-time">08 Sep 14</td>
+              </tr>
+              <tr>
+                <td class="m-table-name"><a href=""><img src="/styles/img/team-melvin.jpg">[name]</a></td>
+                <td class="m-table-desc"><a href="">
+                  <p>Fabio vel iudice vincam, sunt in culpa qui officia o vel iudice vincam, sunt in culpa qui officia o vel iudice vincam, sunt in culpa qui officia.</p>
+                  </a></td>
+                <td class="m-table-time">08 Sep 14</td>
+              </tr>
+              <tr>
+                <td width="150" class="m-table-name"><a href=""><img src="/styles/img/team-melvin.jpg">[name]</a></td>
+                <td class="m-table-desc"><a href="">
+                  <p>Fabio vel iudice vincam, sunt in culpa qui officia o vel iudice vincam, sunt in culpa qui officia o vel iudice vincam, sunt in culpa qui officia.</p>
+                  </a></td>
+                <td width="120" class="m-table-time">08 Sep 14</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="hr2"></div>
+        <div class="message-list-div">
+          <h3>Conversation with [name]</h3>
+          <div class="con_box message-box">
+            <div class="message-box-item">
+              <div class="row-fluid">
+                <div class="span1 profile-img"> <a href=""><img src="/styles/img/team-melvin.jpg"></a> </div>
+                <div class="span11 desc">
+                  <h4><a href="">[Name]</a><span class="time-meta">20:51, 28 MAR 2014</span></h4>
+                  <p>Ullamco laboris nisi ut aliquid ex ea commodi consequat. Curabitur blandit tempus ardua ridiculus sed magna. At nos hinc posthac, sitientis piros Afros.</p>
+                  <div class="message-attach">
+                  	<h5>Attachments</h5>
+                  	<div class="attach-items-div">
+                  		<div class="attach-items">
+                  			<a href=""><i class="icon-download-alt"></i> [File Name]</a>
+                  		</div>
+                  		
+                  		<div class="attach-items">
+                  				<a href=""><i class="icon-download-alt"></i> [File Name]</a>
+                  			</div>
+                  			<div class="attach-items">
+                  					<a href=""><i class="icon-download-alt"></i> [File Name]</a>
+                  				</div>
+                  	
+                  	</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message-box-item">
+              <div class="row-fluid">
+                <div class="span1 profile-img"> <a href=""><img src="/styles/img/team-melvin.jpg"></a> </div>
+                <div class="span11 desc">
+                  <h4><a href="">[Name]</a></h4>
+                  <p>[Messages]</p>
+                </div>
+              </div>
+            </div>
+            <div class="message-box-item">
+              <div class="row-fluid">
+                <div class="span12 message-input">
+                  <p><b>Send [name] a message</b></p>
+                  <textarea class="form-control" rows="6"></textarea>
+                  <div class="message-input-list">
+                    <div class="row-fluid">
+                    <div class="span12"><div class="message-error">
+                    	Please do not key in your email address in the message.
+                    </div>
+                    </div>
+                    </div>
+                    <div class="row-fluid message-box-action">
+                      <div class="span7">
+                      
+                      	<div class="upload-button">
+                      		<input type="file" class="custom-file-input" multiple="multiple">
 
+                      	</div>
+                      	<div class="message-box-mb">
+                      		Max size 30MB
+                      		
+                      	</div>
+                      	
+                      	
+                        
+                      </div>
+                      <div class="span3"> 
+                      	<div class="message-box-chars">
+                      	1200 CHARS MAX
+                      	
+                      	</div> 
+                      </div>
+                      <div class="span2 message-submit">
+                        <button type="button" class="btn btn-primary">SEND</button>
+                      </div>
+                    </div>
+                    <div class="uploaded-file">
+                    	<div class="message-attach">
+                    		<div class="attach-items-div">
+                    			<div class="attach-items">
+                    				<a href=""><i class="icon-download-alt"></i> [File Name]</a> <span>Completed</span>
+                    			</div>
+                    			
+                    			<div class="attach-items">
+                    					<a href=""><i class="icon-download-alt"></i> [File Name]</a> <span>Completed</span>
+                    				</div>
+                    				<div class="attach-items">
+                    						<a href=""><i class="icon-download-alt"></i> [File Name]</a> <span>Completed</span>
+                    					</div>
+                    		
+                    		</div>
+                    	</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hr2"></div>
+        <employer-pending-projects projects="pending_projects"></employer-pending-projects>
+        <div class="hr2"></div>
         <employer-active-projects projects="active_projects"></employer-active-projects>
       </div>
-
     </div>
   </div>
-
 </div>
+
+
+
+
+
