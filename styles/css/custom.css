@@ -574,6 +574,290 @@ html body {
 
 /*  profile settings
 ---------------------------------------------------------------- */
+
+.btn.btn-more-info{
+	border: 1px solid #ccc;
+	background-color: #fff!important;
+	color: #666;
+}
+.btn.btn-more-info:hover{
+	color: #111!important;
+	background-color: #f6f6f6!important;
+}
+.show-more-div{
+	text-align: center;
+}
+
+h4 small, h4 .small{
+	font-size: 14px;
+	line-height: 18px;
+	
+}
+.text-grey {
+color: #999999;
+}
+
+.listing-reviews{
+	
+}
+.listing-reviews h4{
+	margin: 0px;
+	
+}
+
+.btn-group > .btn:first-of-type{
+	border-top-left-radius: 99px;
+	border-bottom-left-radius: 99px;
+}
+.btn-group > .btn:last-of-type {
+border-top-right-radius: 99px;
+border-bottom-right-radius: 99px;
+}
+
+.listing-review-item h4{
+	margin-bottom: 10px;
+}
+
+.listing-reviews i {
+	color: #ddd;
+}
+
+i.icon-star-active{
+	color: #fcd20b!important;
+}
+.service-rate-item{
+	display: block;
+	line-height: 20px;
+	margin-bottom: 8px;
+	font-size: 12px;
+}
+.service-rate-item span{
+	margin-left: 5px;
+}
+
+.review-action .btn{
+	font-size: 13px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.listing-review-item .review-desc{
+	margin-bottom: 0px;
+}
+.service-rate-item.service-rate-item-input .icon-star:hover{
+	color: #fcd20b!important;
+}
+.write-review-div{
+	padding: 15px 15px 5px;
+	background-color: #eee;
+}
+.review-star-item{
+	margin-bottom: 12px;
+}
+.listing-reviews .write-review-div h4{
+	margin-bottom: 12px;
+}
+.review-star-item p{
+	margin-bottom: 2px;
+}
+
+/*  messages
+---------------------------------------------------------------- */
+
+.messages-table{
+	background-color: white;	
+	margin-bottom: 0px;
+}
+.messages-table table{
+	border: 1px solid #ddd;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.table th, .table td{
+	padding: 10px 10px;
+}
+
+.messages-table .table-bordered th, .messages-table .table-bordered td{
+	border-left: 1px solid #eee;
+}
+.messages-table table{
+	margin-bottom: 0px;
+}
+.m-table-desc{
+
+}
+table.table-hover tr:hover td{
+	background-color: #eee!important;
+	cursor: pointer;
+}
+.m-table-name a:hover
+{
+	text-decoration: none;
+}
+.m-table-name a{
+	color: #333;
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	
+}
+.m-table-name img{
+	width: 22px;
+	height: 22px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+	margin-right: 10px;
+}
+.messages-table .m-table-desc p{
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	margin: 0px;
+	max-width: 100%;
+	color: #333;
+}
+.messages-table .m-table-desc a:hover
+{
+	text-decoration: none;
+}
+
+.message-box-item .profile-img{
+	border-radius: 2px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.message-box-item .profile-img img{
+	border-radius: 2px;
+}
+
+.message-box-item .desc h4{
+	margin: 0px 0px 10px;
+	font-size: 18px;
+	line-height: 18px;
+}
+.message-box{
+	padding: 20px 0px 10px;
+}
+
+.message-box-item {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+	padding: 0px 20px 10px;
+}
+.message-box-item:last-child{
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	border: 0px;
+}
+.message-box-item .time-meta{
+	float: right;
+	font-size: 10px;
+	color: #aaa;
+	font-weight: normal;
+}
+
+.message-box-action{
+	
+}
+input.custom-file-input{
+	height: auto;
+	margin-bottom: 5px;
+}
+input.custom-file-input:hover{
+	border: 1px solid #aaa;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Upload';
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  /* text-shadow: 1px 1px #fff; */
+  font-weight: 500;
+  font-size: 12px;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.message-box-mb{
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+	float: left;
+	
+}
+.message-box-chars{
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+	line-height: 36px;
+}
+
+.message-attach{
+	background-color: #f3f3f3;
+	padding: 8px 10px 2px;
+	font-size: 12px;
+}
+.message-attach h5{
+	font-size: 13px;
+	margin: 0px 0px 8px;
+	line-height: 14px;
+}
+.message-attach a{
+	color: #666;
+}
+.message-attach i{
+	color: #999;
+	margin-right: 8px;
+}
+.attach-items{
+	margin-bottom: 5px;
+}
+.attach-items span{
+	color: #aaa;
+	margin-left: 20px;
+}
+.message-input{
+	background-color: #eee;
+	padding: 15px;
+	margin-bottom: 8px;
+}
+.uploaded-file{
+	margin-top: 10px;
+}
+.message-error{
+	padding: 5px 10px;
+	color: white;
+	background-color: #CF000F;
+	font-size: 11px;
+	margin-bottom: 12px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.message-input-list .message-submit .btn{
+	float: right;
+	font-size: 13px;
+}
+
+/*  profile settings
+---------------------------------------------------------------- */
 .control-group {
     margin-bottom: 9px;
 }
@@ -681,7 +965,7 @@ html body {
 .bottom-menu-inverse {
     background-color: #fff;
     color: #666;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #ffd5ee;
 }
 
 
