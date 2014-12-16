@@ -1,89 +1,16 @@
 <div class="body_container_home unbody_container">
-<<<<<<< HEAD
-<div class="banner-home">
-  <div class="container">
-    <div class="row">
-      <div class="span8 offset4">
-        <div class="row">
-          <img class="center" src="styles/img/logo.png">
-        </div>
-        <div class="row">
-          <p class="center banner-font1">is a talent agency for freelance creative talents</p>
-          <div class="center banner-font2">Post your project, and search through the list of hand-picked freelancers all over the world</div>
-        </div>
-        <div class="row-fluid choice-box">
-          <div class="span6 center separate">
-            <p class="align-right banner-font2 ">I have a project</p>
-            <p class="p-right">Have a project and require freelancers? We have a network of handpicked, creative professionals who are ready to get dirty. We match you up and make sure the process goes smoothly on both ends.</p><p></p>
-            <p class="p-right"><a class="p-right" href="/#/employer.register"><img data-step="3" data-intro="if you have a project, submit by clicking this button!" src="styles/img/button-submit-project-1.png"></a></p>
-          </div>
-          <div class="span6 center separate2">
-            <p class="align-left banner-font2 ">I have skills to offer</p><p>
-          </p><p class="p-left">Looking for more freelance opportunities? Join our community and create an online profile so that we can match you up with the different media projects that we are attracting.</p>
-            <p class="p-left"><a href="/#/freelancer.register"><img data-step="4" data-intro="Found a project you want to offer your skills to? Click this and join our community"   src="styles/img/button-join-1.png"></a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> <!-- end of banner-home -->
-
-
-<div class="home-section-div about_us_area homepage-step-div">
-  <div class="container">
-    <div class="row-fluid">
-      <div class="span12">
-        <div class="title-1">Hiring as Easy as 1, 2, 3</div>
-      </div>
-    </div>
-    <div class="row-fluid au_content">
-      <div class="span4">
-        <img class="center" src="styles/img/icon-projects.png">
-        <h3 class="center">Post Your Project</h3>
-        <p>Post your project with detailed project descriptions and specifications so that we can match the best person for your job.</p>
-      </div>
-      <div class="span4 center-box">
-        <img class="center" src="styles/img/icon-community.png">
-        <h3 class="center">Search for Freelancer</h3>
-        <p>Browse through our list of freelancers to look for one that best matches your criteria. Get to know their experience, skills, location and rates with just a click.</p>
-      </div>
-      <div class="span4">
-        <img class="center" src="styles/img/icon-convenience.png">
-        <h3 class="center">Sit Back and Wait</h3>
-        <p>Sit back and wait for freelancers to bid or accept your offer to take up your project. We will get back to you in a couple of days with the best match.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="home-section-div home-services-area homepage-step-div">
-  <div class="container">
-    <div class="row-fluid">
-      <div class="span12">
-        <div class="title-1">Looking for one stop Project Management services?</div>
-        <p class="desc-1">To simplify the process of engaging the freelancers especially in more complex creative products, we will be happy to assist you in ensuring the smooth production of the creative process all the way to final delivery. </p>
-        
-        <div class="services-button">
-        	<a href="" class="btn btn-primary btn-large">
-        		Find out more about our services
-        		
-        	</a>
-        	<a href="" class="btn btn-primary btn-large">
-        		Contact us 
-        	</a>
-=======
   <div class="flexslider home-flexslider">
     <ul class="slides">
       <li>
         <div class="banner-home">
           <div class="container">
             <div class="row">
-              <div class="span8 offset4"> 
+              <div class="span8 offset4">
                 <!--<div class="row">
           <img class="center" src="styles/img/logo.png">
         </div>-->
                 <div class="row home-banner-desc">
-                  
+
                   <div class="center banner-font2">Post your project, and search through the list of hand-picked freelancers all over the world</div>
                   <p class="center">We are a talent agency for freelance creative talents</p>
                 </div>
@@ -126,7 +53,7 @@
     </ul>
   </div>
   <!-- end of banner-home -->
-  
+
   <div class="home-section-div about_us_area homepage-step-div">
     <div class="container">
       <div class="row-fluid">
@@ -146,58 +73,11 @@
         <div class="span4"> <img class="center" src="styles/img/icon-convenience.png">
           <h3 class="center">Sit Back and Wait</h3>
           <p>Sit back and wait for freelancers to bid or accept your offer to take up your project. We will get back to you in a couple of days with the best match.</p>
->>>>>>> 7761bb4d12364587bde12bb2d676d7c7b19d99e7
         </div>
-        
       </div>
     </div>
-    
   </div>
-<<<<<<< HEAD
-</div>
 
-
-
-
-<div class="portfolio_area home-section-div">
-  <div class="container">
-    <div class="row">
-      <div class="span12 ">
-        <div class="title-1">Recently Joined Freelancers</div>
-      </div>
-    </div>
-    <div class="row">
-
-      <div class="portfolio ">
-
-        <div class="row-fluid">
-          <div class="span3 work-box" ng-repeat="freelancer in freelancers_start">
-            <div>
-              <a ng-href="/#/freelancers.show/{{ freelancer.id }}">
-                <img ng-if="freelancer.photo_url == null || freelancer.photo_url == ''" class="center" nailthumb width="225" height="225" method="crop" src="styles/img/profile.jpg">
-                <img ng-if="freelancer.photo_url != null && freelancer.photo_url != ''" class="center" nailthumb width="225" height="225" method="crop" ng-src="{{ freelancer.photo_url }}">
-              </a>
-            </div>
-            <div class="work-description">
-              <h4>{{ freelancer.first_name }}</h4>
-              <p>{{ freelancer.job_title }}</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row-fluid">
-          <div class="span3 work-box" ng-repeat="freelancer in freelancers_end">
-            <div>
-              <a ng-href="/#/freelancers.show/{{ freelancer.id }}">
-                <img ng-if="freelancer.photo_url == null || freelancer.photo_url == ''" class="center" nailthumb width="225" height="225" method="crop" src="styles/img/profile.jpg">
-                <img ng-if="freelancer.photo_url != null && freelancer.photo_url != ''" class="center" nailthumb width="225" height="225" method="crop" ng-src="{{ freelancer.photo_url }}">
-              </a>
-            </div>
-            <div class="work-description">
-              <h4>{{ freelancer.first_name }}</h4>
-              <p>{{ freelancer.job_title }}</p>
-=======
-  
   <div class="portfolio_area home-section-div">
     <div class="container">
       <div class="row">
@@ -223,211 +103,17 @@
                 <h4>{{ freelancer.first_name }}</h4>
                 <p>{{ freelancer.job_title }}</p>
               </div>
->>>>>>> 7761bb4d12364587bde12bb2d676d7c7b19d99e7
             </div>
           </div>
         </div>
-
       </div>
-<<<<<<< HEAD
-    </div>
-    <div class="row">
-      <div class="span12 center">
-        <a href="/#/employer.register" class="btn btn-primary btn-large" title="view more">Become a project owner to view more</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="home-section-div partners-div">
-  <div class="container">
-    <div class="row-fluid">
-      <div class="span12">
-        <div class="title-1">Our Clients</div>
-      </div>
-    </div>
-    <div class="row-fluid partners-logos">
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo1.png">
-
-
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo2.png">
-
-
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo3.png">
-
-
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo4.png">
-
-
-      </div>
-
-    </div>
-    <div class="row-fluid partners-logos">
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo5.png">
-
-
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo6.png">
-
-
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo7.png">
-
-
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo8.png">
-
-
-      </div>
-
-    </div>
-    <div class="row-fluid partners-logos">
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo9.png">
-
-
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo10.png">
-
-
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo11.png">
-
-
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo12.png">
-
-
-      </div>
-
-    </div>
-
-    <div class="row-fluid partners-logos">
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo13.png">
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo14.png">
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo15.png">
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/logo16.png">
-      </div>
-    </div>
-
-    <div class="row-fluid partners-logos">
-      <div class="span3">
-        <img class="center" src="styles/img/partners/agility_logo.png">
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/facebook_logo.png">
-      </div>
-
-      <div class="span3">
-        <img class="center" src="styles/img/partners/novartis_logo.png">
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="quote_area home-section-div white-bg">
-  <div class="container">
-    <div class="row-fluid quote-inner">
-      <div class="span6 quote-logo">
-        <img src="styles/img/quotelogo.png">
-      </div>
-      <div class="span6">
-        <!--<div class="row quote-box">
-          <div class="quote-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ante est. Ut eget risus tortor. Donec laoreet accumsan erat eget ullamcorper. Nulla ligula turpis, faucibus id consequat vel.</p>
-            <div class="quote-content-person">Someone, company</div>
-          </div>
-        </div>-->
-
-
-
-        <span class="text">CreativesAtWork has been an incredibly useful service, literally saving us days of work to find the right freelancers.<em class="arw"></em><em class="arwb"></em><span class="handle">Jayce</span></span>
-
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="home-convert-1 home-section-div">
-  <div class="container">
-    <div class="row-fluid contact-inner">
-
-
-      <div class="span12">
-        <div class="title-1">No more waiting, get started on our platform now</div>
-      </div>
-
-    </div>
-    <div class="row-fluid choice-box">
-
-
-      <div class="span6 center separate">
-        <p class="align-right banner-font2 ">I have a project</p>
-        <p class="p-right">Post your project here now!</p>
-        <p class="p-right"><a class="p-right" href="/#/employer.register"><img data-step="3" data-intro="if you have a project, submit by clicking this button!" src="styles/img/button-submit-project-1.png"></a></p>
-      </div>
-      <div class="span6 center separate2">
-        <p class="align-left banner-font2 ">I have skills to offer</p><p>
-      </p><p class="p-left">Register with us right now!</p>
-        <p class="p-left"><a href="/#/freelancer.register"><img data-step="4" data-intro="Found a project you want to offer your skills to? Click this and join our community" src="styles/img/button-join-1.png"></a></p>
-      </div>
-    </div>
-
-  </div>
-</div>
-</div>
-
-
-
-=======
       <div class="row">
         <div class="span12 center"> <a href="/#/employer.register" class="btn btn-primary btn-large" title="view more">Become a project owner to view more</a> </div>
       </div>
     </div>
   </div>
-  
-  
+
+
   <div class="home-convert-1 home-section-div grey-bg">
     <div class="container">
       <div class="row-fluid contact-inner">
@@ -450,7 +136,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="home-section-div home-services-area homepage-step-div home-pm white-bg">
     <div class="container">
       <div class="row-fluid">
@@ -458,45 +144,45 @@
           <div class="title-1">Looking for one stop Project Management services?</div>
           <p class="desc-1">To simplify the process of engaging the freelancers especially in more complex creative products, we will be happy to assist you in ensuring the smooth production of the creative process all the way to final delivery. </p>
           <div class="services-button">  <a href="" class="btn btn-primary btn-large"> Contact us </a> </div>
-          
-          
-          
+
+
+
         </div>
       </div>
     </div>
   </div>
-  
-  
+
+
   <div class="quote_area home-section-div grey-bg">
     <div class="container">
       <div class="row-fluid quote-inner">
-        
+
         <div class="quote-flexslider flexslider">
-        	<ul class="slides">
-        		<li>
-        <div class="span6 offset3 quote-boxer">          
-          
-          <span class="text quote-box-1">CreativesAtWork has been an incredibly useful service, literally saving us days of work to find the right freelancers.<!--<em class="arw"></em><em class="arwb"></em>--><span class="handle">Jayce</span></span>
-          
-           <img class="quote-img" src="styles/img/team-jayce.jpg"> 
-           </div>
-           </li>
-           
-           <li>
-           <div class="span6 offset3 quote-boxer">          
-             
-             <span class="text quote-box-1">CreativesAtWork has been an incredibly useful service, literally saving us days of work to find the right freelancers.<!--<em class="arw"></em><em class="arwb"></em>--><span class="handle">Fanny</span></span>
-             
-              <img class="quote-img" src="styles/img/team-fanny.jpg"> 
+          <ul class="slides">
+            <li>
+              <div class="span6 offset3 quote-boxer">
+
+                <span class="text quote-box-1">CreativesAtWork has been an incredibly useful service, literally saving us days of work to find the right freelancers.<!--<em class="arw"></em><em class="arwb"></em>--><span class="handle">Jayce</span></span>
+
+                <img class="quote-img" src="styles/img/team-jayce.jpg">
               </div>
-              </li>
-              
-           </ul>
-           </div>
+            </li>
+
+            <li>
+              <div class="span6 offset3 quote-boxer">
+
+                <span class="text quote-box-1">CreativesAtWork has been an incredibly useful service, literally saving us days of work to find the right freelancers.<!--<em class="arw"></em><em class="arwb"></em>--><span class="handle">Fanny</span></span>
+
+                <img class="quote-img" src="styles/img/team-fanny.jpg">
+              </div>
+            </li>
+
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-  
+
   <div class="home-section-div partners-div">
     <div class="container">
       <div class="row-fluid">
@@ -535,36 +221,35 @@
       </div>
     </div>
   </div>
-  
-  
-  
-</div>
->>>>>>> 7761bb4d12364587bde12bb2d676d7c7b19d99e7
 
-<!-- Place in the <head>, after the three links --> 
+
+
+</div>
+
+<!-- Place in the <head>, after the three links -->
 <script type="text/javascript" charset="utf-8">
-    $('.home-flexslider').flexslider( {
-    	animation: "fade",
-    	animationLoop: true, 
-    	slideshowSpeed: 6000,
-    	touch: true,  
-    	controlNav: true, 
-    	directionNav: true,
-    }
-    );
-	
-	
-	
-	    $('.quote-flexslider').flexslider( {
-	    	animation: "fade",
-	    	animationLoop: true, 
-	    	slideshowSpeed: 4000,
-	    	touch: true,  
-	    	controlNav: true, 
-	    	directionNav: true,
-	    }
-	    );
-	
-	
-	
+  $('.home-flexslider').flexslider( {
+        animation: "fade",
+        animationLoop: true,
+        slideshowSpeed: 6000,
+        touch: true,
+        controlNav: true,
+        directionNav: true,
+      }
+  );
+
+
+
+  $('.quote-flexslider').flexslider( {
+        animation: "fade",
+        animationLoop: true,
+        slideshowSpeed: 4000,
+        touch: true,
+        controlNav: true,
+        directionNav: true,
+      }
+  );
+
+
+
 </script> 
