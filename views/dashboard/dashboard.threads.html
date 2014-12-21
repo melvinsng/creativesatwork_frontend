@@ -1,0 +1,24 @@
+<div class="body_container">
+  <div class="container">
+    <div class="row">
+      <div class="span3">
+        <div class="box_main sidenav" ng-if="user_type == 'employer'">
+          <div ng-include src="'partials/dashboard/employer.side_menu.html'"></div>
+        </div>
+        <div class="box_main sidenav" ng-if="user_type == 'freelancer'">
+          <div ng-include src="'partials/dashboard/freelancer.side_menu.html'"></div>
+        </div>
+      </div>
+      <div class="span9">
+
+        <message-threads></message-threads>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

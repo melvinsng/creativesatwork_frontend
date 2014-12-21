@@ -1,0 +1,34 @@
+<div>
+  <div ng-if="threads && threads.length > 0">
+    <h3 class="title-listing-1 margin-bottom-10" style="margin-top: 0px;"> My Messages <span class="ng-binding"> ({{threads.length}}) </span> </h3>
+    <div class="messages-table">
+      <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+          <th>Sender</th>
+          <th>Last Message</th>
+          <th>Updated</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="thread in threads">
+          <td class="m-table-name"><a ng-href="/#/dashboard.messages/{{thread.conversation_id}}"><img src="{{thread.sender_photo}}">{{thread.sender_name}}</a></td>
+          <td class="m-table-desc"><a ng-href="/#/dashboard.messages/{{thread.conversation_id}}">
+            <p>{{thread.content}}</p>
+          </a></td>
+          <td class="m-table-time">{{thread.updated_at | date:medium}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div ng-if="threads && threads.length == 0">
+    <h3 class="title-listing-1 margin-bottom-10" style="margin-top: 0px;"> My messages (0) </h3>
+    <div class="messages-table">
+     <div style="padding: 20px;">
+       <p>You can send freelancers a message to enquire about their availability or to share documents.</p>
+       <p>Go to any freelancer's page to start a conversation</p>
+     </div>
+    </div>
+  </div>
+</div>

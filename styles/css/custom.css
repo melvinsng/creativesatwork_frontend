@@ -619,11 +619,11 @@ border-bottom-right-radius: 99px;
 }
 
 .listing-reviews i {
-	color: #ddd;
+	/*color: #ddd;*/
 }
 
 i.icon-star-active{
-	color: #fcd20b!important;
+	/*color: #fcd20b!important;*/
 }
 .service-rate-item{
 	display: block;
