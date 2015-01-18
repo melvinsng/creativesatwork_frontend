@@ -3,16 +3,20 @@
     <div class="row-fluid">
       <h4>Write your review</h4>
       <div class="review-star-item">
-        <p>Review rating 1</p>
+        <p>Skill Level</p>
         <custom-rating value="form_object.rating_1" max="5" readonly="false" required></custom-rating>
       </div>
       <div class="review-star-item">
-        <p>Review rating 2</p>
+        <p>Quality of Work</p>
         <custom-rating value="form_object.rating_2" max="5" readonly="false" required></custom-rating>
       </div>
       <div class="review-star-item">
-        <p>Review rating 3</p>
+        <p>Communication</p>
         <custom-rating value="form_object.rating_3" max="5" readonly="false" required></custom-rating>
+      </div>
+      <div class="review-star-item">
+        <p>Cost Effectiveness</p>
+        <custom-rating value="form_object.rating_4" max="5" readonly="false" required></custom-rating>
       </div>
       <div class="review-textarea">
         <textarea rows="4" ng-model="form_object.content" name="review_content" required class="form-control span12"></textarea>

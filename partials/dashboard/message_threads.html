@@ -14,7 +14,7 @@
         <tr ng-repeat="thread in threads">
           <td class="m-table-name"><a ng-href="/#/dashboard.messages/{{thread.conversation_id}}"><img src="{{thread.sender_photo}}">{{thread.sender_name}}</a></td>
           <td class="m-table-desc"><a ng-href="/#/dashboard.messages/{{thread.conversation_id}}">
-            <p>{{thread.content}}</p>
+            <p>{{ thread.content | limitTo: 40 }}{{thread.content.length > 40 ? '...' : ''}}</p>
           </a></td>
           <td class="m-table-time">{{thread.updated_at | date:medium}}</td>
         </tr>

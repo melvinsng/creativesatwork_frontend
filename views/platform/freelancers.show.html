@@ -112,22 +112,27 @@
                   <h4 class="span12">{{review.reviewer_name}} <span class="text-grey pull-right small">{{ review.updated_at | date:medium }}</span></h4>
                 </div>
                 <div class="row-fluid">
-                  <div class="span4">
+                  <div class="span3">
                     <div class="pull-left">
                       <div class="service-rate-item">
                         <custom-rating value="review.rating_1" max="5" readOnly="true"></custom-rating>
-                        <span>Review rating 1</span></div>
+                        <span>Skill Level</span></div>
                     </div>
                   </div>
-                  <div class="span4">
+                  <div class="span3">
                     <div class="service-rate-item">
                       <custom-rating value="review.rating_2" max="5" readOnly="true"></custom-rating>
-                      <span>Review rating 2</span></div>
+                      <span>Quality of Work</span></div>
                   </div>
-                  <div class="span4">
+                  <div class="span3">
                     <div class="service-rate-item">
                       <custom-rating value="review.rating_3" max="5" readOnly="true"></custom-rating>
-                      <span>Review rating 3</span></div>
+                      <span>Communication</span></div>
+                  </div>
+                  <div class="span3">
+                    <div class="service-rate-item">
+                      <custom-rating value="review.rating_4" max="5" readOnly="true"></custom-rating>
+                      <span>Cost</span></div>
                   </div>
                 </div>
               </div>
