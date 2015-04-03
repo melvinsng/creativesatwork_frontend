@@ -182,18 +182,12 @@ img.center {
 .home-services-area{
 	background-color: #f6f6f6;
 	text-align: center;
-<<<<<<< HEAD
-=======
 	border-top: 1px solid #ffd5ee;
->>>>>>> 7761bb4d12364587bde12bb2d676d7c7b19d99e7
 	
 }
 
 .services-button{
 	margin-top: 20px;
-<<<<<<< HEAD
-}
-=======
 	
 }
 .btn{
@@ -209,11 +203,11 @@ img.center {
 	padding: 15px 22px;	
 }
 
->>>>>>> 7761bb4d12364587bde12bb2d676d7c7b19d99e7
 .desc-1{
 	text-align: center;
 	font-size: 16px;
 	line-height: 22px;
+	margin-bottom: 20px;
 }
 
 /* banner - home */
@@ -224,10 +218,7 @@ img.center {
 	background-repeat:no-repeat;
 	min-height:560px;
 	padding:30px 0;
-	background-size: 100%;
-<<<<<<< HEAD
-	}
-=======
+	background-size: cover;
 	padding-top: 110px;
 }
 
@@ -255,7 +246,6 @@ img.center {
 	border-bottom: 1px solid #ffd5ee;
 }
 	
->>>>>>> 7761bb4d12364587bde12bb2d676d7c7b19d99e7
 .choice-box {
     padding-top: 30px;
 }
@@ -290,7 +280,7 @@ color:  #666;
     border-bottom: 1px solid #999999;
     border-top: 1px solid #999999;
     min-height: 250px;
-    background-size: 100%;
+    background-size: cover;
 }
 .about-comment {
     padding-top: 6%;
@@ -318,7 +308,7 @@ color:  #666;
 	border-bottom: 1px solid #999999;
 	border-top: 1px solid #999999;
 	min-height: 250px;
-	background-size: 100%;
+	background-size: cover;
 }
 
 /* partners
@@ -347,6 +337,7 @@ border-bottom: 1px solid #ffd5ee;
 	background-position:center top;
 	background-repeat:no-repeat;
 	padding:30px 0 10px;
+	background-size: cover;
 	}
 .contact-comment {
     margin: 0 auto;
@@ -387,29 +378,19 @@ border-bottom: 1px solid #ffd5ee;
 	
 }
 
-<<<<<<< HEAD
-.services_area .span6.right{
-	border-left: 1px solid #ddd;
-	padding-left: 40px;
-	
-=======
 
 .services_area .span6.right{
 	border-left: 1px solid #ffd5ee;
 	padding-left: 40px;
 	
 	
->>>>>>> 7761bb4d12364587bde12bb2d676d7c7b19d99e7
 }
 .services_area .span6{
 	padding: 0px 20px;
 }
 .services_area{
 	text-align: center;
-<<<<<<< HEAD
-=======
 	margin-top: 30px;
->>>>>>> 7761bb4d12364587bde12bb2d676d7c7b19d99e7
 }
 .services_area p{
 
@@ -423,6 +404,10 @@ h2.services-title{
 	margin-bottom: 30px;	
 }
 
+.portfolio-area iframe{
+	width: 100%;
+	height: ;
+}
 .portfolio-area{
 	background-color: #f6f6f6;
 	text-align: center;
@@ -472,9 +457,10 @@ h2.services-title{
 	-webkit-border-radius: 9999px;
 	-moz-border-radius: 9999px;
 	border-radius: 9999px;
+	border: 4px solid #fff;
 }
 .grey-bg{
-	background-color: #f6f6f6!important;
+	background-color: #f1f1f1!important;
 }
 
 .white-bg{
@@ -502,7 +488,7 @@ h2.services-title{
     max-width: 950px;
 }
 .aboutus-content p {
-    font-size: 15px;
+   
 }
 .short-quote {
     border-bottom: 1px solid #ccc;
@@ -534,6 +520,7 @@ h2.services-title{
 .about-title {
 
     font-weight: normal;
+
 }
 /* content contact us */
 .input-large {
@@ -590,11 +577,8 @@ h2.services-title{
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size: 100%;
-<<<<<<< HEAD
-=======
 	border-top: 2px solid #ffd5ee;
 	border-bottom: 2px solid #ffd5ee;
->>>>>>> 7761bb4d12364587bde12bb2d676d7c7b19d99e7
 }
 .portfolio {
     margin: 0 auto;
@@ -629,17 +613,18 @@ h2.services-title{
 	padding: 15px;
 	margin: 10px;
 	color: #fff;
-	background: #ec008a;
+	background: #fff;
 
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	text-align: left;
+	text-align: center;
 	
 }
 .quote-box-1::after{
 
-content: "";
+/*content: "";
 position: absolute;
 bottom: -15px;
 left: 47%;
@@ -647,7 +632,7 @@ border-width: 15px 15px 0;
 border-style: solid;
 border-color: #ec008a transparent;
 display: block;
-width: 0;
+width: 0;*/
 }
 
 .quote-boxer{
@@ -706,8 +691,24 @@ width: 0;
     height: 6px;
 }
 
-
 .quote-inner span.text {
+font-size: 24px;
+  line-height: 32px;
+  position: relative;
+  display: block;
+  color: #333;
+  padding: 20px;
+  background-color: transparent;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden;
+
+
+}
+
+/*.quote-inner span.text {
 font-size: 15px;
 position: relative;
 display: block;
@@ -731,7 +732,7 @@ transition: 0.25s;
 -webkit-backface-visibility: hidden;
 border-bottom: 1px solid rgba(0,0,0,0.35);
 border-top: 1px solid transparent;
-}
+}*/
 
 
 .quote-inner .arw {
@@ -766,12 +767,12 @@ z-index: 1;
 
 
 .quote-inner span.handle {
-font-size: 15px;
-color: #eee;
+font-size: 16px;
+color: #111;
 display: block;
 margin: 10px 0 0 0;
 font-weight: normal;
-text-align:right;
+text-align: center;
 }
 
 
@@ -947,4 +948,3 @@ font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 
 
 */
-

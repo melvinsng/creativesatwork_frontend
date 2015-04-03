@@ -1107,3 +1107,215 @@
     overflow: visible !important;
   }
 }
+
+
+@media (max-width: 978px){
+	
+body {
+  padding-right: 0px!important;
+  padding-left: 0px!important;
+}
+.header-logo.span4 {
+	text-align: center;
+	width: 100%;
+}
+.header-right.span7{
+	width: 100%;
+	margin: 0px 20px;
+	  float: left;
+}
+.header-logo {
+	text-align: center!important;
+	margin-bottom: 20px;	
+}
+.signup-area{
+	text-align: center;
+	margin: 0px 0px;
+}
+.signup-area li{
+	float: none;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.signup-area li a{
+	font-size: 12px;
+}
+.navbar .btn-navbar{
+	display: none!important;
+}
+.nav-collapse, .nav-collapse.collapse{
+	height: auto!important;
+	overflow: auto!important;
+}
+.nav-collapse .nav{
+	text-align: center;
+}
+.navbar-inner  .nav-collapse .nav > li{
+	display: inline-block;
+}
+.navbar-inner .nav-collapse .nav > li > a, .navbar-inner .nav-collapse .dropdown-menu a{
+	border-bottom: 0px;
+	font-size: 14px;
+}
+.about-title{
+	
+}
+.home-section-div{
+	padding: 40px 20px;
+}
+ul.bottom-links{
+	  display: inline-block;
+	margin-bottom: 20px;
+}
+.footer-nav ul li{
+	margin-bottom: 10px;
+}
+.bottom-menu{
+	padding: 20px;
+}
+
+.signup-area{
+	float: none;
+}
+.header-nav{
+	text-align: center;
+}
+.navbar.header-nav-2{
+	float: none;
+	text-align: center;
+}
+.span6, .span4{
+	margin-bottom: 20px;
+}
+
+}
+
+
+
+
+/* this is for editing the all the pages css 
+============================================== */
+
+
+@media (max-width: 978px){
+	
+body {
+  padding-right: 0px!important;
+  padding-left: 0px!important;
+}
+.span6.center.separate{
+	float: left;
+	width: 50%;
+}
+.span6.center.separate2{
+	float: left;
+	width: 50%;
+	
+}
+.home-pm{
+	background-image: none;
+}
+.banner-home{
+	padding: 60px 20px 40px;
+}
+.banner-home2{
+	padding: 60px 20px 40px;
+}
+.banner-home2 p{
+	font-size: 14px;
+	line-height: 20px;
+}
+.choice-box .banner-font2{
+	
+	font-size: 16px;
+}
+.choice-box .separate2 .banner-font2{
+	font-size: 16px;
+}
+.choice-box p{
+	font-size: 13px;
+}
+.partners-logos .span3{
+	width: 25%;
+	float: left;
+}
+.partners-logos .span3 img{
+	height: auto;
+}
+.header-logo.span4 {
+	text-align: center;
+	width: 100%;
+}
+.header-right.span7{
+	width: 100%;
+	padding: 0px 20px;
+	margin: 0px;
+	  float: left;
+}
+.header-logo {
+	text-align: center!important;
+	margin-bottom: 20px;	
+}
+.signup-area{
+	text-align: center;
+	margin: 0px 0px;
+}
+.signup-area li{
+	float: none;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.signup-area li a{
+	font-size: 12px;
+}
+.navbar .btn-navbar{
+	display: none!important;
+}
+.nav-collapse, .nav-collapse.collapse{
+	height: auto!important;
+	overflow: auto!important;
+}
+.nav-collapse .nav{
+	text-align: center;
+}
+.navbar-inner  .nav-collapse .nav > li{
+	display: inline-block;
+}
+.navbar-inner .nav-collapse .nav > li > a, .navbar-inner .nav-collapse .dropdown-menu a{
+	border-bottom: 0px;
+	font-size: 14px;
+}
+.about-title{
+	
+}
+.home-section-div{
+	padding: 40px 20px;
+}
+ul.bottom-links{
+	  display: inline-block;
+	margin-bottom: 20px;
+}
+.footer-nav ul li{
+	margin-bottom: 10px;
+}
+.bottom-menu{
+	padding: 20px;
+}
+
+.signup-area{
+	float: none;
+}
+.header-nav{
+	text-align: center;
+}
+.navbar.header-nav-2{
+	float: none;
+	text-align: center;
+}
+.span6, .span4{
+	margin-bottom: 20px;
+}
+
+}
+/* this is for editing the all the pages css 
+============================================== */

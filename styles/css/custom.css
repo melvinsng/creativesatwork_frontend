@@ -65,7 +65,7 @@ html body {
 
 
     background-color: #fff;
-	min-width: 960px;
+	/*min-width: 960px;*/
 }
 
 .border-right-dotted {
@@ -958,7 +958,7 @@ input.custom-file-input:hover{
 .bottom-menu {
     background: #ebedef;
     color: #b8bfc7;
-    padding: 20px 0;
+    padding: 24px 0 20px;
 }
 
 
