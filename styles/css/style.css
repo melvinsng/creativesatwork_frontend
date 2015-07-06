@@ -574,11 +574,12 @@ h2.services-title{
 }
 .portfolio_area {
     background-image: url("../img/work/working1.jpg");
-	background-repeat:no-repeat;
-	background-position:center;
-	background-size: 100%;
-	border-top: 2px solid #ffd5ee;
-	border-bottom: 2px solid #ffd5ee;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100%;
+      border-top: 2px solid #ffd5ee;
+      border-bottom: 2px solid #ffd5ee;
+      background-color: #111;
 }
 .portfolio {
     margin: 0 auto;
@@ -854,6 +855,7 @@ font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 	.banner-font2 {
 		color: #515151;
 		font-size: 19px;
+		line-height: 25px;
 	}
 	.signup-area {
 		margin-left: 50px;
@@ -884,6 +886,7 @@ font-family: "Conv_MuseoSans_500", Arial, sans-serif;
 		padding: 10px 30px !important;
 		text-align: center;
 	}
+
 }
 /*
 @media (max-width: 767px) {
