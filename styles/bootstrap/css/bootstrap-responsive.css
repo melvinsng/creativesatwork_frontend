@@ -1401,6 +1401,12 @@ ul.bottom-links{
 	float: none;
 	width: 100%;
 }
+
+.home-question .desc{
+	display: block;
+	text-align: center;
+	margin: 0px;
+}
 }
 /* this is for editing the all the pages css 
 ============================================== */
