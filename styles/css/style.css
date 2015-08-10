@@ -322,9 +322,10 @@ border-bottom: 1px solid #ffd5ee;
 	
 }
 .partners-div .partners-logos img{
-	height: 65px;
-	
-	margin:20px 0px 20px;
+height: 65px;
+text-align: center;
+padding: 0px;
+margin: 20px auto;
 }
 
 
