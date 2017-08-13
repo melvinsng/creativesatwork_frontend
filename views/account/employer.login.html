@@ -5,56 +5,24 @@
     <div class="row">
       <div class="span10 offset1">
         <div class="featured_box con_box" id="settings_con">
-          <div class="box_main_title">
-            <h4 class="page_title_1">Employer Login</h4>
-          </div>
-          <div class="row">
-            <div class="span5 border-right-dotted">
-              <form novalidate ng-submit="submitForm()" name="userLoginForm" >
-                <div class="control-group">
-                  <label class="control-label">Email</label>
-                  <div class="controls">
-                    <input class="" type="email" placeholder="Email"
-                           ng-model="user.email" name="email" required>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label">Password</label>
-                  <div class="controls">
-                    <input class="" type="password" placeholder="Password"
-                           ng-model="user.password" name="password" required ng-minlength="8"
-                           tooltip="Password is 8 letters long" tooltip-trigger="focus" tooltip-placement="right">
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label></label>
-                  <div class="controls"><a href ng-click="forgotPassword()">Forgot your password?</a></div>
-                </div>
+  <div class="row">
+    <br><br><br>
+    <div class="span6 offset2" style="
+      text-align: center;
+      font-weight: 600;
+      ">
+      <h4 style="
+        font-weight: 300;
+        line-height: 33px;
+        letter-spacing: 1px;
+        ">The registration with Creatives@work is undergoing a transformation. Look out for it. In the meantime, you can register with us through email at <a href="mailto:contactus@creativesatwork.me">contactus@creativesatwork.me</a></h4>
+    </div>
+    <div class="clearfix"></div>
+    <br><br>
+  </div>
+  <!-- end of box_main -->
+</div>
 
-                <div class="control-group">
-                  <label></label>
-                  <div class="controls"><input type="checkbox" ng-model="remember_me" name="remember_me">&nbsp;Remember Me?</div>
-                </div>
-
-                <div class="control-group">
-                  <label class="control-label" for="settings_save"></label>
-                  <div class="controls">
-                    <button ng-disabled="!userLoginForm.$valid" id="settings_save" class="btn btn-small btn-primary" type="submit">Login</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="span4 login_with">
-
-              <a href ng-click="linkedinConnect()" class="btn btn-small btn-social-linkedin"> <i class="fui-linkedin"></i> Login with Linkedin </a>
-              <br>
-              <br>
-              <p>One-click sign in to CreativesAtWork if your account is connected to Linkedin. We'll walk you through connecting it if it isn't. </p>
-            </div>
-          </div>
-          <!-- end of box_main -->
-
-        </div>
       </div>
     </div>
   </div>
